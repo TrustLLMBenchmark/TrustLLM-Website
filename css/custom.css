@@ -1,0 +1,196 @@
+/*************************************************************************
+ * Your custom CSS file
+ *************************************************************************/
+
+:root {
+  --nav-font: Arial, Helvetica, sans-serif;
+  --nav-height: 0px;
+  --UCLA-gold: #FFD100;
+  --UCLA-blue: #2774AE;
+  --UCLA-darkblue: #003B5C;
+  --body-font: #212529;
+  --heading: #1859c2;
+  --nav-darkblue: #05004a;
+  --nav-color: #212529;
+  --nav-color-light: #353c42;
+  --nav-darkblue: #05004a;
+}
+
+
+.custom-dropdown {
+  width: 240px;
+}
+
+.custom-textbox {
+  width: 240px;
+}
+
+#dialog-1,
+#dialog-2,
+#dialog-3,
+#dialog-4,
+#share-dialog {
+  display: none;
+}
+
+#share-url {
+  width: 100%;
+  -webkit-touch-callout: default !important;
+  -webkit-user-select: text !important;
+  -khtml-user-select: text !important;
+  -moz-user-select: text !important;
+  -ms-user-select: text !important;
+  user-select: text !important;
+}
+
+#share-url-copy-prompt {
+  display: none;
+  color: #007bff;
+}
+
+
+
+#title-wrapper {   
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+
+#title {
+  margin-top: var(--nav-height);
+  /* position: relative; */
+  display: flex;
+  flex-direction: column;
+  justify-content: top;
+  align-items: center;
+  height: calc(20vh - var(--nav-height));
+  width: 100vw;
+  left: 10vw;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  /* background: linear-gradient(180deg, var(--nav-darkblue), var(--UCLA-blue)); */
+  /* background: url('img/background.png') no-repeat center; background-size: contain; height: 600px;background-color:white;/
+
+  background-blend-mode: multiply; */
+
+  background-color: rgb(255, 255, 255);
+  background-blend-mode: multiply;
+  /* background-image: url('./../img/background.png'); 设置背景图片 */
+  background-repeat: no-repeat;                /* 背景图片不重复 */
+  background-position: center;                 /* 背景图片居中 */
+  background-size: cover;                    /* 背景图片按比例缩放以适应容器 */
+
+
+}
+
+#title-text-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#title-text-wrapper p {
+  margin: 5px 0; /* Adjust the margin value as needed */
+}
+
+#title-text {
+  font-size: 50px;
+  color: #ffffff;
+}
+#title-icon {
+  width: 10.5em;
+  margin: 20px;
+}
+
+
+.bibtax {
+  /* font-family: Arial; */
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  background-color: #f5f5f5;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  word-wrap: break-word;
+  white-space: pre-wrap;
+}
+
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display:flex;
+  width: 95%;
+  max-width: 2800px;
+  margin: 20px auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  display: flex;          /* 设置为flex布局 */
+  flex-wrap: wrap;        /* 允许多行排布，如果容器宽度不够的话 */
+  justify-content: space-around; /* 元素之间的空间均匀分布 */
+  flex-direction: row;
+}
+
+
+/* h1 {
+  text-align: center;
+  margin-bottom: 50px;
+} */
+
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  flex-direction: row;
+}
+
+.feature {
+  flex: 0 0 calc(27% - 10px);
+  background-color: #fff;
+  border: 1px solid #e6e6e6;
+  padding: 20px;
+  margin: 10px 5px 10px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+
+}
+
+.feature img {
+  width: 90px;
+  height: 90px;
+  display: block;
+  margin: 0 auto;
+}
+
+.feature h2 {
+  text-align: center;
+  margin-bottom: 14px;
+}
+
+.feature p {
+  text-align: center;
+  font-size: 14px;
+}
+
+
+.publication {
+  width: 100%; /* Set the table width to fill the container */
+  border-collapse: collapse; /* Optional: removes the space between borders */
+}
+
+.date-cell {
+  white-space: nowrap; /* Prevents the date from wrapping */
+  text-align: right; /* Aligns the text to the right of the cell */
+  padding-right: 15px; /* Adds some space between the date and the description */
+}
