@@ -1359,9 +1359,13 @@ ol.nested>li:before {
 }
 .work-paper-group {
   border: #ddd solid 1px;
-  border-radius: 5px;
   padding: 0.5em;
   margin-bottom: 2em;
+  background: #ffffff;
+  border-radius: 5px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow:0 0 6px rgba(0,0,0,0.1);
+  -webkit-box-shadow:0 0 6px rgba(0,0,0,0.1);
 }
 .work-paper-group p {
   border-bottom: #ddd 1px solid;
@@ -1375,6 +1379,9 @@ ol.nested>li:before {
 .work-paper-group a {
   text-decoration: none;
   color: #333;
+}
+.work-paper-group a:hover {
+  text-decoration: underline;
 }
 .work-frame {
   margin-top: 5px;
