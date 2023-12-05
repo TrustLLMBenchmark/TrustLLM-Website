@@ -16,6 +16,9 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="js/menu.js"></script>
   <script src="js/footer.js"></script>
+
+  <script src="js/collapsible.js"></script>
+
   <style>
     .menu-index {
       color: rgb(255, 255, 255) !important;
@@ -95,130 +98,214 @@
           <div class="flex-item flex-column">
             <h2>Updates & Releases</h2>
             <hr>
-  
+
             <table class="publication">
-             
+
               <tr>
                 <td class="date-cell"><time datetime="2023-10-12">2023-11-12</time>:</td>
                 <td>We will release our TrustLLM-Benchmark in early December.</td>
               </tr>
             </table>
           </div>
-        
+
         </div>
-        
-        
-        
 
 
-        <div class="flex-item flex-column">
+
+        
 
           <h2>Introduction</h2>
           <hr>
           <p class="text">
           </p>
 
-        <div class="flex-row">
-          <div class="flex-item flex-item-stretch-4 flex-column">
-            <p class="text">
-              <a class="highlight-text">Goals</a><br>
-             Regarding Trustworthy LLMs, our goals include: (1) How to define Trustworthy LLMs, specifically, how to delineate the scope and boundaries for relevant work. It is also important to consider how to involve relevant datasets, tasks, and metrics to measure the trustworthiness of LLMs. (2) What is the performance of existing mainstream large language models in different trustworthy-related aspects? (3) From these evaluation results, can we identify any new insights to promote progress in future research?
-            </p>
-          </div>
-          <div class="flex-item flex-item-stretch flex-column">
-            <img class="image max-width-400" src="img/icon_goals.png">
-          </div>
-        </div>
-
-
           <div class="flex-row">
-          <div class="flex-item flex-item-stretch-4 flex-column">
-            <p class="text">
-              <a class="highlight-text">Contribution</a><br>
-              We have conducted a thorough and comprehensive exploration of the trustworthiness of large language models. Specifically, we introduce TrustLLM, which is divided into two parts: (1) Firstly, it includes guidelines for assessing the trustworthiness of LLMs, and based on these guidelines, we propose a classification system for LLM trustworthiness, encompassing eight aspects, including truthfulness, safety, fairness, robustness, privacy, machine ethics, transparency, and accountability. (2) We have established benchmarks for six of these aspects. This is a comprehensive and integrated benchmark, comprising over 15 subcategories, covering more than 25 datasets and 14 mainstream large language models.
-            </p>
-          </div>
-          <div class="flex-item flex-item-stretch flex-column">
-            <img class="image max-width-400" src="img/icon_contribution.png">
-          </div>
-        </div>
-
-
-
-           <div class="flex-row">
-          <div class="flex-item flex-item-stretch-4 flex-column">
-            <p class="text">
-              <a class="highlight-text">Empirical Findings</a><br>
-              We have conducted a thorough and comprehensive exploration of the trustworthiness of large language models. Specifically, we introduce TrustLLM, which is divided into two parts: (1) Firstly, it includes guidelines for assessing the trustworthiness of LLMs, and based on these guidelines, we propose a classification system for LLM trustworthiness, encompassing eight aspects, including truthfulness, safety, fairness, robustness, privacy, machine ethics, transparency, and accountability. (2) We have established benchmarks for six of these aspects. This is a comprehensive and integrated benchmark, comprising over 15 subcategories, covering more than 25 datasets and 14 mainstream large language models.
-            </p>
-          </div>
-          <div class="flex-item flex-item-stretch flex-column">
-            <img class="image max-width-400" src="img/icon_findings.png">
-          </div>
-
-
-        
-
-          <div class="flex-row">
-            <div class="flex-item flex-column">
-              <h2>Trustworthy Aspects</h2>
-              <hr>
-  
-              <div class="features">
-                <!-- Feature 1 -->
-                <!-- Trustfulness -->
-                <div class="feature">
-                  <img src="img/logos/trustfulness.png" alt="Trustfulness">
-                  <h2>Truthfulness</h2>
-                  <p>The accurate representation of information, facts, and results by an AI system.</p>
-                </div>
-  
-                <!-- Safety -->
-                <div class="feature">
-                  <img src="img/logos/safety.png" alt="Safety">
-                  <h2>Safety</h2>
-                  <p>The outputs from LLMs should only engage users in a safe and healthy conversation.</p>
-                </div>
-  
-                <!-- Fairness -->
-                <div class="feature">
-                  <img src="img/logos/fairness.png" alt="Fairness">
-                  <h2>Fairness</h2>
-                  <p>The quality or state of being fair, especially fair or impartial treatment.</p>
-                </div>
-  
-                <!-- Robustness -->
-                <div class="feature">
-                  <img src="img/logos/robustness.png" alt="Robustness">
-                  <h2>Robustness</h2>
-                  <p>The ability of a system to maintain its level of performance under a variety of circumstances.</p>
-                </div>
-  
-                <!-- Privacy -->
-                <div class="feature">
-                  <img src="img/logos/privacy.png" alt="Privacy">
-                  <h2>Privacy</h2>
-                  <p>The norms and practices that help to safeguard human autonomy, identity, and dignity.</p>
-                </div>
-  
-                <!-- Machine Ethics -->
-                <div class="feature">
-                  <img src="img/logos/ethics.png" alt="Machine Ethics">
-                  <h2>Machine Ethics</h2>
-                  <p>Ensuring moral behaviors of man-made machines that use artificial intelligence, otherwise known as
-                    artificial intelligent agents.</p>
-                </div>
-  
-              </div>
+            <div class="flex-item flex-item-stretch-4 flex-column">
+              <p class="text">
+                <a class="highlight-text">Goals</a><br>
+                In the context of trustworthy LLMs, our objectives are multifaceted. First, we want to define what makes
+                an LLM trustworthy and set clear guidelines for this research area. This means selecting the right data,
+                tasks, and ways to measure an LLM's trustworthiness. Secondly, we intend to evaluate the performance of
+                existing mainstream LLMs across various aspects related to trustworthiness. Lastly, we aspire to gain
+                new insights from these evaluations that could promote progress in future research.
+              </p>
+            </div>
+            <div class="flex-item flex-item-stretch flex-column">
+              <img class="image max-width-400" src="img/icon_goals.png">
             </div>
           </div>
+
+
+          <div class="flex-row">
+            <div class="flex-item flex-item-stretch-4 flex-column">
+              <p class="text">
+                <a class="highlight-text">Contribution</a><br>
+                In this work, we thoroughly explore the trustworthiness of large language models. Specifically, we
+                introduce TrustLLM, which is divided into two parts: (1) Firstly, we proposed a set of guidelines for
+                evaluating the trustworthiness of LLMs, which is a taxonomy encompassing eight aspects, including
+                truthfulness, safety, fairness, robustness, privacy, machine ethics, transparency, and accountability.
+                (2) We established a benchmark for six of these aspects due to the difficulty of benchmarking
+                transparency and accountability. This is the first comprehensive and integrated benchmark comprising
+                over 18 subcategories, covering more than 30 datasets and 16 mainstream LLMs, including both proprietary
+                and open-source LLMs.
+
+              </p>
+            </div>
+            <div class="flex-item flex-item-stretch flex-column">
+              <img class="image max-width-400" src="img/icon_contribution.png">
+            </div>
+          </div>
+
+          <!-- <div class="feature">
+            <img src="img/logos/trustfulness.png" alt="Trustfulness">
+            <h2 onclick="toggleDescription(this)">Truthfulness</h2>
+            <div class="description">
+              <p>The accurate representation of information, facts, and results by an AI system.</p>
+            </div>
+          </div> -->
+                    
+
+          <div class="flex-row">
+            <div class="flex-item flex-item-stretch-4 flex-column">
+              <p class="text">
+                <a class="highlight-text">Empirical Findings</a><br>
+                We have conducted a thorough and comprehensive exploration of the trustworthiness of large language
+                models. Specifically, we introduce TrustLLM, which is divided into two parts: (1) Firstly, it includes
+                guidelines for assessing the trustworthiness of LLMs, and based on these guidelines, we propose a
+                classification system for LLM trustworthiness, encompassing eight aspects, including truthfulness,
+                safety, fairness, robustness, privacy, machine ethics, transparency, and accountability. (2) We have
+                established benchmarks for six of these aspects. This is a comprehensive and integrated benchmark,
+                comprising over 15 subcategories, covering more than 25 datasets and 14 mainstream large language
+                models.
+              </p>
+            </div>
+            <div class="flex-item flex-item-stretch flex-column">
+              <img class="image max-width-400" src="img/icon_findings.png">
+            </div>
+          </div>
+          
+
+          <div class="feature">
+            <img src="img/logos/trustfulness.png" alt="Trustfulness">
+            <input type="checkbox" id="toggle" class="toggle">
+            <label for="toggle" class="toggle-label">Truthfulness</label>
+            <div class="description">
+              <h2>Truthfulness</h2>
+              <p>Truthfulness means the accurate representation of information, facts, and results by an AI system. We have found that:</p>
+              <ol>
+              <li>Proprietary LLMs like GPT-4 and open-source LLMs like LLama2 struggle to provide truthful responses when relying solely on their internal knowledge. This challenge can primarily be attributed to noise in their training data, including misinformation or outdated information, and the lack of knowledge generalization capability in the underlying Transformer architecture.</li>
+              <li>Moreover, all LLMs encounter challenges in zero-shot commonsense reasoning tasks. This highlights that LLMs may struggle with relatively straightforward tasks for humans to perform.</li>
+              <li>Conversely, when assessing the performance of LLMs with augmented external knowledge, they exhibit significantly improved results, surpassing the state-of-the-art performance reported in the original datasets.</li>
+              <li>We note a significant discrepancy among different hallucination tasks. Most LLMs exhibit fewer hallucinations in multiple-choice question-answering tasks than in more open-ended tasks like knowledge-grounded dialogue, likely attributed to prompt sensitivity.</li>
+              <li>We also identify a positive correlation between sycophancy and adversarial actuality. Models exhibiting lower levels of sycophancy demonstrate an ability to identify factual errors in user input and highlight them effectively.</li>
+              </ol>
+            </div>
+          </div>
+          <div class="feature">
+            <img src="img/logos/safety.png" alt="safety">
+            <input type="checkbox" id="toggle#2" class="toggle">
+            <label for="toggle#2" class="toggle-label">Safety</label>
+            <div class="description">
+              <h2>Safety</h2>
+              <p>Safety ensures the outputs from LLMs should only engage users in a safe and healthy conversation. In our experiments, we have found that:</p>
+              <ol>
+              <li>The safety of most open-source LLMs still raises concerns and lags significantly behind proprietary LLMs. For the most part, the safety of open-source LLMs is lower than that of proprietary LLMs in terms of jailbreak, toxicity, and misuse.</li>
+              <li>Importantly, LLMs cannot effectively resist various jailbreak attacks equally. We observed that different jailbreak attacks have varying success rates against LLMs, with leetspeak attacks having the highest success rate. Therefore, LLM developers should consider a comprehensive approach to defend against different types of attacks.</li>
+              <li>Most LLMs struggle to balance regular and excessive safety. LLMs with strong safety often exhibit severely exaggerated safety, as seen in the Llama2 series and ERNIE, which suggests that most LLMs are not really aligned and they may only memorize shallow alignment knowledge.</li>
+              </ol>
+            </div>
+          </div>
+
+
+          <div class="feature">
+            <img src="img/logos/fairness.png" alt="fairness">
+            <input type="checkbox" id="toggle#3" class="toggle">
+            <label for="toggle#3" class="toggle-label">Fairness</label>
+            <div class="description">
+              <h2>Fairness</h2>
+              <p>Fairness is the quality or state of being fair, especially fair or impartial treatment. In our experiments, we have found that:</p>
+              <ol>
+                <li>The performance of most LLMs in identifying stereotypes is not satisfactory, with even the best-performing GPT-4 having an overall accuracy of only 65%. When presented with sentences containing stereotypes, the percentage of agreement of different LLMs varies widely, with the best performance at only 0.5% agreement rate and the worst-performing one approaching an agreement rate of nearly 60%.</li>
+                <li>Only a few LLMs, such as Oasst-12b and Vicuna-7b, exhibit fairness in handling disparagement; most LLMs still display biases towards specific attributes when dealing with questions containing disparaging tendencies.</li>
+                <li>Regarding preferences, most LLMs perform very well on the plain baseline, maintaining objectivity and neutrality or refusing to answer directly. However, when forced to choose an option, the performance of LLMs significantly decreases.</li>
+              </ol>
+            </div>
+          </div>
+          
+          <div class="feature">
+            <img src="img/logos/robustness.png" alt="robustness">
+            <input type="checkbox" id="toggle#4" class="toggle">
+            <label for="toggle#4" class="toggle-label">Robustness</label>
+            <div class="description">
+              <h2>Robustness</h2>
+              <p>Robustness is the ability of a system to maintain its level of performance under a variety of circumstances. In our experiments, we have found that:</p>
+              <ol>
+                <li>The Llama2 series and most proprietary LLMs outperform other open-source models in traditional downstream tasks.</li>
+                <li>There is a significant variation in LLMs' performance in open-ended tasks. The worst-performing model has an average semantic similarity of only 88% before and after perturbation, which is far below the top performer at 97.64%.</li>
+                <li>Regarding OOD robustness, LLMs also exhibit considerable variability in performance. The leading model, GPT-4, shows a RtA (Refuse to Answer) rate of over 80% in OOD detection and an F1 score averaging over 92% in OOD generalization. In contrast, the least effective models register a mere 0.4% in RtA and F1 score of around 30%.</li>
+              </ol>
+            </div>
+          </div>
+          
+          <div class="feature">
+            <img src="img/logos/privacy.png" alt="privacy">
+            <input type="checkbox" id="toggle#5" class="toggle">
+            <h2>Privacy</h2>
+            
+            <div class="description">
+              
+              <p>Privacy is the norms and practices that help to safeguard human autonomy, identity, and dignity. In our experiments, we have found that:</p>
+              <ol>
+                <li>Most LLMs possess a certain level of privacy awareness, as the probability of LLMs refusing to answer inquiries about private information dramatically increases when they are informed that they must adhere to privacy policies.</li>
+                <li>Pearson's correlation between humans and LLMs of agreement on privacy information usage varies a lot. The best-performed ChatGPT archives a 0.665 correlation, however, the correlation of Oass-12b is surprisingly less than zero, indicating a negative correlation with humans.</li>
+                <li>We have observed that nearly all LLMs exhibit some information leakage on Enron Email Dataset.</li>
+              </ol>
+            </div>
+          </div>
+
+          <div class="feature">
+            <img src="img/logos/ethics.png" alt="ethics">
+            <input type="checkbox" id="toggle#6" class="toggle">
+            <h2>Machine Ethics</h2>
+            
+            <div class="description">
+              
+              <p>Machine ethics ensure the moral behaviors of man-made machines that use artificial intelligence, otherwise known as artificial intelligent agents. In our experiments, we have found that:</p>
+              <ol>
+                <li>LLMs have already formed a particular set of moral values, but there is still a significant gap in aligning completely with human ethics. The accuracy of most LLMs on implicit tasks with low-ambiguity scenarios is below 70%, regardless of the dataset. When given a high-ambiguity scenario, the performance varies a lot between different LLMs as the Llama2 series reaches an RtA of 99.9%, and some are less than 70%.</li>
+                <li>Regarding emotional awareness, LLMs demonstrate higher accuracy, with the best-performing LLMs being GPT-4, which exceeds an accuracy rate of 94%.</li>
+              </ol>
+            </div>
+          </div>
+          
+          
+        <!-- Machine Ethics -->
+        <div class="card">
+          <div class="pic">
+            <img src="img/logos/ethics.png" alt="Machine Ethics">
+          </div>
+          <div class="textcard">
+            <h2>Machine Ethics</h2>
+            <p>Machine ethics ensure the moral behaviors of man-made machines that use artificial intelligence, otherwise known as artificial intelligent agents. In our experiments, we have found that:</p>
+            <ol>
+              <li>LLMs have already formed a particular set of moral values, but there is still a significant gap in aligning completely with human ethics. The accuracy of most LLMs on implicit tasks with low-ambiguity scenarios is below 70%, regardless of the dataset. When given a high-ambiguity scenario, the performance varies a lot between different LLMs as the Llama2 series reaches an RtA of 99.9%, and some are less than 70%.</li>
+              <li>Regarding emotional awareness, LLMs demonstrate higher accuracy, with the best-performing LLMs being GPT-4, which exceeds an accuracy rate of 94%.</li>
+            </ol>
+          </div>
         </div>
 
-      <br>
-                    <div class="feature">
-                      <h2>Taxonomy for TrustLLM</h2>
-                      <div class="flourish-embed flourish-hierarchy" data-src="visualisation/15357314"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
-                      </div>
+
+     
+
+          </div>
+
+          <br>
+          <div class="feature">
+            <h2>Taxonomy for TrustLLM</h2>
+            <div class="flourish-embed flourish-hierarchy" data-src="visualisation/15357314">
+              <script src="https://public.flourish.studio/resources/embed.js"></script>
+            </div>
+          </div>
 
 
         </div>
@@ -280,9 +367,10 @@
                   This is the title for the bottom very long scrollable table
                 </p>
                 <div class="custom-table-container center add-top-margin-small">
-    
+
                   <table class="custom-table">
-                    <caption>Datasets and metrics in TrustLLM. ✓ means the dataset exists and ✗ means the dataset is first proposed in the TrustLLM benchmark.</caption>
+                    <caption>Datasets and metrics in TrustLLM. ✓ means the dataset exists and ✗ means the dataset is
+                      first proposed in the TrustLLM benchmark.</caption>
                     <thead>
                       <tr>
                         <th>Dataset</th>
@@ -293,191 +381,212 @@
                       </tr>
                     </thead>
                     <tbody>
-                     
-                  <!-- ...previous rows... -->
-                  <tr>
-                    <td class="text-left">SQuAD2.0</td>
-                    <td class="text-left">It combines questions in SQuAD1.1 with over 50,000 unanswerable questions.</td>
-                    <td>100</td>
-                    <td>✓</td>
-                    <td>Misinformation</td>
-                  </tr>
-                  <tr class="bg-color-light-gray">
-                    <td class="text-left">CODAH</td>
-                    <td class="text-left">It contains 28,000 commonsense questions.</td>
-                    <td>100</td>
-                    <td>✓</td>
-                    <td>Misinformation</td>
-                  </tr>
-                  <tr>
-                    <td class="text-left">HotpotQA</td>
-                    <td class="text-left">It contains 113k Wikipedia-based question-answer pairs for complex multi-hop reasoning.</td>
-                    <td>100</td>
-                    <td>✓</td>
-                    <td>Misinformation</td>
-                  </tr>
-                  <tr class="bg-color-light-gray">
-                    <td class="text-left">AdversarialQA</td>
-                    <td class="text-left">It contains 30,000 adversarial reading comprehension question-answer pairs.</td>
-                    <td>100</td>
-                    <td>✓</td>
-                    <td>Misinformation</td>
-                  </tr>
-                  <tr>
-                    <td class="text-left">Climate-FEVER</td>
-                    <td class="text-left">It contains 7,675 climate change-related claims manually curated by human fact-checkers.</td>
-                    <td>100</td>
-                    <td>✓</td>
-                    <td>Misinformation</td>
-                  </tr>
-                  
-                  <tr>
-                    <td class="text-left">SciFact</td>
-                    <td class="text-left">It contains 1,400 expert-written scientific claims pairs with evidence abstracts.</td>
-                    <td>100</td>
-                    <td>✓</td>
-                    <td>Misinformation</td>
-                  </tr>
-                  <tr class="bg-color-light-gray">
-                    <td class="text-left">COVID-Fact</td>
-                    <td class="text-left">It contains 4,086 real-world COVID claims.</td>
-                    <td>100</td>
-                    <td>✓</td>
-                    <td>Misinformation</td>
-                  </tr>
-                  <tr>
-                    <td class="text-left">HealthVer</td>
-                    <td class="text-left">It contains 14,330 health-related claims against scientific articles.</td>
-                    <td>100</td>
-                    <td>✓</td>
-                    <td>Misinformation</td>
-                  </tr>
-                  <tr class="bg-color-light-gray">
-                    <td class="text-left">TruthfulQA</td>
-                    <td class="text-left">The multiple-choice questions to evaluate whether a language model is truthful in generating answers to questions.</td>
-                    <td>352</td>
-                    <td>✓</td>
-                    <td>Hallucination</td>
-                  </tr>
-                  <tr>
-                    <td class="text-left">HaluEval</td>
-                    <td class="text-left">It contains 35,000 generated and human-annotated hallucinated samples.</td>
-                    <td>300</td>
-                    <td>✓</td>
-                    <td>Hallucination</td>
-                  </tr>
-                  <tr class="bg-color-light-gray">
-                    <td class="text-left">LM-exp-sycophancy</td>
-                    <td class="text-left">A dataset consists of human questions along with one sycophancy response example and one non-sycophancy response example.</td>
-                    <td>179</td>
-                    <td>✗</td>
-                    <td>Sycophancy</td>
-                  </tr>
-                  <tr>
-                    <td class="text-left">Opinion pairs</td>
-                    <td class="text-left">It contains 120 pairs of opposite opinions related to the ideology and culture/lifestyle.</td>
-                    <td>240</td>
-                    <td>✗</td>
-                    <td>Sycophancy</td>
-                  </tr>
-                  <tr class="bg-color-light-gray">
-                    <td class="text-left">WinoBias</td>
-                    <td class="text-left">It contains 3,160 sentences, split for development and testing, created by researchers familiar with the project.</td>
-                    <td>734</td>
-                    <td>✓</td>
-                    <td>Stereotype</td>
-                  </tr>
-                  <tr>
-                    <td class="text-left">StereoSet</td>
-                    <td class="text-left">It contains the sentences that measure model preferences across gender, race, religion, and profession.</td>
-                    <td>734</td>
-                    <td>✓</td>
-                    <td>Stereotype</td>
-                  </tr>
-                  <tr class="bg-color-light-gray">
-                    <td class="text-left">Adult</td>
-                    <td class="text-left">The dataset, containing attributes like sex, race, age, education, work hours, and work type, is utilized to predict salary levels for individuals.</td>
-                    <td>810</td>
-                    <td>✗</td>
-                    <td>Disparagement</td>
-                  </tr>
-                  <tr>
-                    <td class="text-left">Jailbraek Trigger</td>
-                    <td class="text-left">The dataset contains the prompts based on 14 different jailbreak attacks.</td>
-                    <td>1400</td>
-                    <td>✗</td>
-                    <td>Jailbreak, Toxicity</td>
-                  </tr>
-                  <tr class="bg-color-light-gray">
-                    <td class="text-left">Misuse (additional)</td>
-                    <td class="text-left">This dataset contains prompts crafted to assess how LLMs react when confronted by attackers or malicious users seeking to exploit the model for harmful purposes.</td>
-                    <td>261</td>
-                    <td>✗</td>
-                    <td>Misuse</td>
-                  </tr>
-                  <tr>
-                    <td class="text-left">Do-Not-Answer</td>
-                    <td class="text-left">It is curated and filtered to consist only of prompts to which responsible LLMs do not answer.</td>
-                    <td>344</td>
-                    <td>✓</td>
-                    <td>Misuse</td>
-                  </tr>
-                  <tr class="bg-color-light-gray">
-                    <td class="text-left">AdvGLUE</td>
-                    <td class="text-left">A multi-task dataset with different adversarial attacks.</td>
-                    <td>912</td>
-                    <td>✓</td>
-                    <td>Natural Noise</td>
-                  </tr>
-                  <tr>
-                    <td class="text-left">AdvInstruction</td>
-                    <td class="text-left">1200 instructions generated by 11 perturbation methods.</td>
-                    <td>1200</td>
-                    <td>✗</td>
-                    <td>Natural Noise</td>
-                  </tr>
-                  <tr class="bg-color-light-gray">
-                    <td class="text-left">ETHICS</td>
-                    <td class="text-left">It contains numerous morally relevant scenarios descriptions and their moral correctness.</td>
-                    <td>500</td>
-                    <td>✓</td>
-                    <td>Implicit Ethics</td>
-                  </tr>
-                  <tr>
-                    <td class="text-left">Social Chemistry 101</td>
-                    <td class="text-left">It contains various social norms, each consisting of an action and its label.</td>
-                    <td>500</td>
-                    <td>✓</td>
-                    <td>Implicit Ethics</td>
-                  </tr>
-                  <tr class="bg-color-light-gray">
-                    <td class="text-left">Jiminy Cricket</td>
-                    <td class="text-left">It consists of thousands of moral scenarios based on 25 adventure games.</td>
-                    <td>998</td>
-                    <td>✓</td>
-                    <td>Explicit Ethics</td>
-                  </tr>
-                  <tr>
-                    <td class="text-left">Enron Email Dataset</td>
-                    <td class="text-left">It contains approximately 500,000 emails generated by employees of the Enron Corporation.</td>
-                    <td>400</td>
-                    <td>✓</td>
-                    <td>Privacy Awareness, Privacy Leakage</td>
-                  </tr>
-                  <tr class="bg-color-light-gray">
-                    <td class="text-left">Xstest</td>
-                    <td class="text-left">It's a test suite for identifying exaggerated safety behaviors in LLMs.</td>
-                    <td>200</td>
-                    <td>✓</td>
-                    <td>Exaggerated Safety</td>
-                  </tr>
-                  <!-- ...all rows... -->
-    
-                  
-                  </tbody>
+
+                      <!-- ...previous rows... -->
+                      <tr>
+                        <td class="text-left">SQuAD2.0</td>
+                        <td class="text-left">It combines questions in SQuAD1.1 with over 50,000 unanswerable questions.
+                        </td>
+                        <td>100</td>
+                        <td>✓</td>
+                        <td>Misinformation</td>
+                      </tr>
+                      <tr class="bg-color-light-gray">
+                        <td class="text-left">CODAH</td>
+                        <td class="text-left">It contains 28,000 commonsense questions.</td>
+                        <td>100</td>
+                        <td>✓</td>
+                        <td>Misinformation</td>
+                      </tr>
+                      <tr>
+                        <td class="text-left">HotpotQA</td>
+                        <td class="text-left">It contains 113k Wikipedia-based question-answer pairs for complex
+                          multi-hop reasoning.</td>
+                        <td>100</td>
+                        <td>✓</td>
+                        <td>Misinformation</td>
+                      </tr>
+                      <tr class="bg-color-light-gray">
+                        <td class="text-left">AdversarialQA</td>
+                        <td class="text-left">It contains 30,000 adversarial reading comprehension question-answer
+                          pairs.</td>
+                        <td>100</td>
+                        <td>✓</td>
+                        <td>Misinformation</td>
+                      </tr>
+                      <tr>
+                        <td class="text-left">Climate-FEVER</td>
+                        <td class="text-left">It contains 7,675 climate change-related claims manually curated by human
+                          fact-checkers.</td>
+                        <td>100</td>
+                        <td>✓</td>
+                        <td>Misinformation</td>
+                      </tr>
+
+                      <tr>
+                        <td class="text-left">SciFact</td>
+                        <td class="text-left">It contains 1,400 expert-written scientific claims pairs with evidence
+                          abstracts.</td>
+                        <td>100</td>
+                        <td>✓</td>
+                        <td>Misinformation</td>
+                      </tr>
+                      <tr class="bg-color-light-gray">
+                        <td class="text-left">COVID-Fact</td>
+                        <td class="text-left">It contains 4,086 real-world COVID claims.</td>
+                        <td>100</td>
+                        <td>✓</td>
+                        <td>Misinformation</td>
+                      </tr>
+                      <tr>
+                        <td class="text-left">HealthVer</td>
+                        <td class="text-left">It contains 14,330 health-related claims against scientific articles.</td>
+                        <td>100</td>
+                        <td>✓</td>
+                        <td>Misinformation</td>
+                      </tr>
+                      <tr class="bg-color-light-gray">
+                        <td class="text-left">TruthfulQA</td>
+                        <td class="text-left">The multiple-choice questions to evaluate whether a language model is
+                          truthful in generating answers to questions.</td>
+                        <td>352</td>
+                        <td>✓</td>
+                        <td>Hallucination</td>
+                      </tr>
+                      <tr>
+                        <td class="text-left">HaluEval</td>
+                        <td class="text-left">It contains 35,000 generated and human-annotated hallucinated samples.
+                        </td>
+                        <td>300</td>
+                        <td>✓</td>
+                        <td>Hallucination</td>
+                      </tr>
+                      <tr class="bg-color-light-gray">
+                        <td class="text-left">LM-exp-sycophancy</td>
+                        <td class="text-left">A dataset consists of human questions along with one sycophancy response
+                          example and one non-sycophancy response example.</td>
+                        <td>179</td>
+                        <td>✗</td>
+                        <td>Sycophancy</td>
+                      </tr>
+                      <tr>
+                        <td class="text-left">Opinion pairs</td>
+                        <td class="text-left">It contains 120 pairs of opposite opinions related to the ideology and
+                          culture/lifestyle.</td>
+                        <td>240</td>
+                        <td>✗</td>
+                        <td>Sycophancy</td>
+                      </tr>
+                      <tr class="bg-color-light-gray">
+                        <td class="text-left">WinoBias</td>
+                        <td class="text-left">It contains 3,160 sentences, split for development and testing, created by
+                          researchers familiar with the project.</td>
+                        <td>734</td>
+                        <td>✓</td>
+                        <td>Stereotype</td>
+                      </tr>
+                      <tr>
+                        <td class="text-left">StereoSet</td>
+                        <td class="text-left">It contains the sentences that measure model preferences across gender,
+                          race, religion, and profession.</td>
+                        <td>734</td>
+                        <td>✓</td>
+                        <td>Stereotype</td>
+                      </tr>
+                      <tr class="bg-color-light-gray">
+                        <td class="text-left">Adult</td>
+                        <td class="text-left">The dataset, containing attributes like sex, race, age, education, work
+                          hours, and work type, is utilized to predict salary levels for individuals.</td>
+                        <td>810</td>
+                        <td>✗</td>
+                        <td>Disparagement</td>
+                      </tr>
+                      <tr>
+                        <td class="text-left">Jailbraek Trigger</td>
+                        <td class="text-left">The dataset contains the prompts based on 14 different jailbreak attacks.
+                        </td>
+                        <td>1400</td>
+                        <td>✗</td>
+                        <td>Jailbreak, Toxicity</td>
+                      </tr>
+                      <tr class="bg-color-light-gray">
+                        <td class="text-left">Misuse (additional)</td>
+                        <td class="text-left">This dataset contains prompts crafted to assess how LLMs react when
+                          confronted by attackers or malicious users seeking to exploit the model for harmful purposes.
+                        </td>
+                        <td>261</td>
+                        <td>✗</td>
+                        <td>Misuse</td>
+                      </tr>
+                      <tr>
+                        <td class="text-left">Do-Not-Answer</td>
+                        <td class="text-left">It is curated and filtered to consist only of prompts to which responsible
+                          LLMs do not answer.</td>
+                        <td>344</td>
+                        <td>✓</td>
+                        <td>Misuse</td>
+                      </tr>
+                      <tr class="bg-color-light-gray">
+                        <td class="text-left">AdvGLUE</td>
+                        <td class="text-left">A multi-task dataset with different adversarial attacks.</td>
+                        <td>912</td>
+                        <td>✓</td>
+                        <td>Natural Noise</td>
+                      </tr>
+                      <tr>
+                        <td class="text-left">AdvInstruction</td>
+                        <td class="text-left">1200 instructions generated by 11 perturbation methods.</td>
+                        <td>1200</td>
+                        <td>✗</td>
+                        <td>Natural Noise</td>
+                      </tr>
+                      <tr class="bg-color-light-gray">
+                        <td class="text-left">ETHICS</td>
+                        <td class="text-left">It contains numerous morally relevant scenarios descriptions and their
+                          moral correctness.</td>
+                        <td>500</td>
+                        <td>✓</td>
+                        <td>Implicit Ethics</td>
+                      </tr>
+                      <tr>
+                        <td class="text-left">Social Chemistry 101</td>
+                        <td class="text-left">It contains various social norms, each consisting of an action and its
+                          label.</td>
+                        <td>500</td>
+                        <td>✓</td>
+                        <td>Implicit Ethics</td>
+                      </tr>
+                      <tr class="bg-color-light-gray">
+                        <td class="text-left">Jiminy Cricket</td>
+                        <td class="text-left">It consists of thousands of moral scenarios based on 25 adventure games.
+                        </td>
+                        <td>998</td>
+                        <td>✓</td>
+                        <td>Explicit Ethics</td>
+                      </tr>
+                      <tr>
+                        <td class="text-left">Enron Email Dataset</td>
+                        <td class="text-left">It contains approximately 500,000 emails generated by employees of the
+                          Enron Corporation.</td>
+                        <td>400</td>
+                        <td>✓</td>
+                        <td>Privacy Awareness, Privacy Leakage</td>
+                      </tr>
+                      <tr class="bg-color-light-gray">
+                        <td class="text-left">Xstest</td>
+                        <td class="text-left">It's a test suite for identifying exaggerated safety behaviors in LLMs.
+                        </td>
+                        <td>200</td>
+                        <td>✓</td>
+                        <td>Exaggerated Safety</td>
+                      </tr>
+                      <!-- ...all rows... -->
+
+
+                    </tbody>
                   </table>
-                  
-    
+
+
                   <table class="custom-table">
                     <caption>
                       Task Overview. <span>&#9675;</span> means automatic evaluation, <span>&#9679;</span> means manual
@@ -524,8 +633,8 @@
                         <td>Hallucination</td>
                       </tr>
                       <!-- Repeat other rows with alternating bg-color-light-gray as needed -->
-    
-    
+
+
                       <!-- ...previous rows... -->
                       <tr>
                         <td>Persona Sycophancy</td>
@@ -646,11 +755,11 @@
                         <td class="text-center">&#9675;</td>
                         <td>Emotional Awareness</td>
                       </tr>
-    
+
                     </tbody>
                   </table>
-    
-    
+
+
                   <table class=" custom-table">
                     <thead>
                       <tr class="bg-color-gray">
@@ -799,7 +908,8 @@
                   payar
                   custosi traductores. At solmen va esser.
                 </p>
-                <a class="image adaptive-image" style="background-image: url('img/dummay-img-long.png'); min-height: 150px;"
+                <a class="image adaptive-image"
+                  style="background-image: url('img/dummay-img-long.png'); min-height: 150px;"
                   href="img/dummay-img-long.png" target="_blank"></a>
                 <p class="text">
                   Li Europan lingues es membres del sam familie. Lor separat existentie es un myth. Por scientie,
@@ -817,7 +927,7 @@
           </div>
         </div>
 
-<!-- 
+        <!-- 
 
         <div class="flex-row">
 
@@ -849,7 +959,7 @@
           </div>
         </div> -->
 
-        
+
         <!--End Intro-->
 
 
@@ -875,3 +985,4 @@
 </body>
 
 </html>
+

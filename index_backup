@@ -1679,3 +1679,135 @@
 </body>
 
 </html>
+
+
+
+
+     
+          
+
+
+<div class="flex-row">
+  <div class="flex-item flex-column">
+    <h2>Trustworthy Aspects</h2>
+    <hr>
+    <div class="features">
+      <!-- Feature 1 -->
+      <!-- Trustfulness -->
+      <div class="feature">
+        <img src="img/logos/trustfulness.png" alt="Trustfulness">
+        <h2>Truthfulness</h2>
+        <p>The accurate representation of information, facts, and results by an AI system.</p>
+      </div>
+
+      <!-- Safety -->
+      <div class="feature">
+        <img src="img/logos/safety.png" alt="Safety">
+        <h2>Safety</h2>
+        <p>The outputs from LLMs should only engage users in a safe and healthy conversation.</p>
+      </div>
+
+      <!-- Fairness -->
+      <div class="feature">
+        <img src="img/logos/fairness.png" alt="Fairness">
+        <h2>Fairness</h2>
+        <p>The quality or state of being fair, especially fair or impartial treatment.</p>
+      </div>
+
+      <!-- Robustness -->
+      <div class="feature">
+        <img src="img/logos/robustness.png" alt="Robustness">
+        <h2>Robustness</h2>
+        <p>The ability of a system to maintain its level of performance under a variety of circumstances.
+        </p>
+      </div>
+
+      <!-- Privacy -->
+      <div class="feature">
+        <img src="img/logos/privacy.png" alt="Privacy">
+        <h2>Privacy</h2>
+        <p>The norms and practices that help to safeguard human autonomy, identity, and dignity.</p>
+      </div>
+
+      <!-- Machine Ethics -->
+      <div class="feature">
+        <img src="img/logos/ethics.png" alt="Machine Ethics">
+        <h2>Machine Ethics</h2>
+        <p>Ensuring moral behaviors of man-made machines that use artificial intelligence, otherwise known
+          as
+          artificial intelligent agents.</p>
+      </div>
+      <div class="features">
+        <!-- Feature 1: Trustfulness -->
+        <div class="card">
+          <div class="pic">
+            <img src="img/logos/trustfulness.png" alt="Trustfulness">
+          </div>
+          <div class="textcard">
+            <h2>Truthfulness</h2>
+            <p>The accurate representation of information, facts, and results by an AI system.</p>
+          </div>
+        </div>
+        <!-- Safety -->
+        <div class="card">
+          <div class="pic">
+            <img src="img/logos/safety.png" alt="Safety">
+          </div>
+          <div class="textcard">
+            <h2>Safety</h2>
+            <p>The outputs from LLMs should only engage users in a safe and healthy conversation.</p>
+          </div>
+        </div>
+
+        <!-- Fairness -->
+        <div class="card">
+          <div class="pic">
+            <img src="img/logos/fairness.png" alt="Fairness">
+          </div>
+          <div class="textcard">
+            <h2>Fairness</h2>
+            <p>The quality or state of being fair, especially fair or impartial treatment.</p>
+          </div>
+        </div>
+
+        <!-- Robustness -->
+        <div class="card">
+          <div class="pic">
+            <img src="img/logos/robustness.png" alt="Robustness">
+          </div>
+          <div class="textcard">
+            <h2>Robustness</h2>
+            <p>The ability of a system to maintain its level of performance under a variety of
+circumstances.</p>
+          </div>
+        </div>
+
+        <!-- Privacy -->
+        <div class="card">
+          <div class="pi'c">
+            <img src="img/logos/privacy.png" alt="Privacy">
+          </div>
+          <div class="textcard">
+            <h2>Privacy</h2>
+            <p>The norms and practices that help to safeguard human autonomy, identity, and dignity.</p>
+          </div>
+        </div>
+
+        <!-- Machine Ethics -->
+        <div class="card">
+          <div class="pic">
+            <img src="img/logos/ethics.png" alt="Machine Ethics">
+          </div>
+          <div class="textcard">
+            <h2>Machine Ethics</h2>
+            <p>Ensuring moral behaviors of man-made machines that use artificial intelligence, otherwise
+              known as artificial intelligent agents.</p>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+
+</div>
