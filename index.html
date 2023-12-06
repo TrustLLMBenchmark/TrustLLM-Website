@@ -25,6 +25,28 @@
       opacity: 1 !important;
       font-weight: 700 !important;
     }
+    .container {
+            text-align: center; /* 让所有内容居中对齐 */
+            height: 30vh; /* 使容器填满整个视口高度 */
+            display: flex;
+            flex-direction: column; /* 使子元素垂直排列 */
+            justify-content: center; /* 垂直居中对齐 */
+            align-items: center; /* 水平居中对齐 */
+            border: none; /* 移除边框 */
+            box-shadow: none; /* 移除阴影 */
+        }
+        #title-icon {
+            width: 70%; /* logo宽度设置为100%，使其尽可能大 */
+            height: auto; /* 保持图片高度自适应 */
+            margin-bottom: 20px; /* 在logo和标语之间增加一些间隔 */
+        }
+        .banner {
+            width: 100%;
+            text-align: center; /* 使标语居中对齐 */
+        }
+        .banner h3 {
+            font-size: 1.5em; /* 调整标语的字体大小 */
+        }
   </style>
 </head>
 
@@ -35,86 +57,67 @@
 <body>
 
   <div class="menu-container"></div>
-  <div class="content-container">
-    <div id="title">
-      <img src="img/logo.png" id="title-icon" style="width:600px;">
-      <!-- <div id="title-wrapper">
-        
-       <div id="title-text-wrapper">
-          <p id="title-text">TrustLLM Benchmark</p>
-        </div>
-      </div> -->
-    </div>
-  </div>
-
-
+  <div class="container">
+    <img src="img/logo.png" id="title-icon">
+</div>
 
   <div class="banner">
     <div class="banner-table flex-column">
       <div class="flex-row">
         <div class="flex-item flex-column">
-          <h3 class="add-top-margin-small">TrustLLM: A Benchmark and Principles for Trustworthiness in Large Language
-            Models</h3>
-          <!-- <p class="text">
-            This website contains content that some may find disturbing or offensive, including content that is
-            discriminative, hateful, or violent in nature.
-          </p> -->
+          <h3 class="add-top-margin-small">TrustLLM: Trustworthiness in Large Language Models</h3>
         </div>
       </div>
     </div>
   </div>
 
+  <div id="supportContainer">
+<!--  <h1 id="supportTitle">Support</h1>-->
+
+  <div id="logoContainer">
+    <!-- 以下是示例的学校logo，你可以根据实际情况替换链接 -->
+    <img src="img/logos/Lehigh-University-logo.png" alt="School 1" class="schoolLogo">
+    <img src="img/logos/W&M.png" alt="School 3" class="schoolLogo">
+    <img src="img/logos/stanford.png" alt="School 3" class="schoolLogo">
+    <img src="img/logos/Microsoft.png" alt="School 3" class="schoolLogo">
+    <img src="img/logos/UCLA.jpeg" alt="School 3" class="schoolLogo">
+    <img src="img/logos/CMU.png" alt="School 3" class="schoolLogo">
+    <img src="img/logos/UIUC.png" alt="School 3" class="schoolLogo">
+    <img src="img/logos/TAMU.png" alt="School 3" class="schoolLogo">
+    <img src="img/logos/ND.png" alt="School 2" class="schoolLogo">
+    <img src="img/logos/UMD.webp" alt="School 2" class="schoolLogo">
+    <img src="img/logos/UIC.png" alt="School 2" class="schoolLogo">
+    <img src="img/logos/UGA.png" alt="School 2" class="schoolLogo">
+    <!-- 添加更多的logo -->
+  </div>
+</div>
+
   <div class="content-container">
-    <!-------------------------------------------------------------------------------------------->
-    <!--Start Header-->
 
-    <!-- <div class="banner"
-      style="background: url('img/background.png') no-repeat center; background-size: contain; height: 600px;background-color:white;">
-    </div> -->
-
-    <!-- <div class="banner">
-      <div class="banner-table flex-column">
-        <div class="flex-row">
-          <div class="flex-item flex-column">
-            <h2 class="add-top-margin-small">This is the header area</h2>
-            <p class="text">
-              Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi
-              vel
-              augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget
-              condimentum rhoncus, <a href="javascript:void(0)">sem quam semper libero</a>, sit amet adipiscing sem
-              neque sed ipsum. Nam quam nunc, blandit
-              vel, luctus pulvinar, hendrerit id, lorem.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div> -->
-    <!--End Header-->
-    <!-------------------------------------------------------------------------------------------->
     <div class="content">
       <div class="content-table flex-column">
-        <div class="flex-row">
+<!--        <div class="flex-row">-->
 
-          <div class="flex-item flex-column">
-            <h2>Updates & Releases</h2>
-            <hr>
+<!--          <div class="flex-item flex-column">-->
+<!--            <h2>Updates & Releases</h2>-->
+<!--            <hr>-->
 
-            <table class="publication">
+<!--            <table class="publication">-->
 
-              <tr>
-                <td class="date-cell"><time datetime="2023-10-12">2023-11-12</time>:</td>
-                <td>We will release our TrustLLM-Benchmark in early December.</td>
-              </tr>
-            </table>
-          </div>
+<!--              <tr>-->
+<!--                <td class="date-cell"><time datetime="2023-10-12">2023-11-12</time>:</td>-->
+<!--                <td>We will release our TrustLLM-Benchmark in early December.</td>-->
+<!--              </tr>-->
+<!--            </table>-->
+<!--          </div>-->
 
-        </div>
+<!--        </div>-->
 
 
 
         
 
-          <h2>Introduction</h2>
+          <h1>Introduction</h1>
           <hr>
           <p class="text">
           </p>
@@ -156,15 +159,6 @@
             </div>
           </div>
 
-          <!-- <div class="feature">
-            <img src="img/logos/trustfulness.png" alt="Trustfulness">
-            <h2 onclick="toggleDescription(this)">Truthfulness</h2>
-            <div class="description">
-              <p>The accurate representation of information, facts, and results by an AI system.</p>
-            </div>
-          </div> -->
-                    
-
           <div class="flex-row">
             <div class="flex-item flex-item-stretch-4 flex-column">
               <p class="text">
@@ -184,13 +178,20 @@
             </div>
           </div>
           
-
+          <div class="features-container">
           <div class="feature">
-            <img src="img/logos/trustfulness.png" alt="Trustfulness">
+
             <input type="checkbox" id="toggle" class="toggle">
-            <label for="toggle" class="toggle-label">Truthfulness</label>
+            <div class="banner">
+            <div class="banner-table flex-column">
+              <div class="flex-row">
+                <div class="flex-item flex-column">
+                  <h3 class="add-top-margin-small">Truthfulness</h3>
+                </div>
+              </div>
+            </div>
+          </div>
             <div class="description">
-              <h2>Truthfulness</h2>
               <p>Truthfulness means the accurate representation of information, facts, and results by an AI system. We have found that:</p>
               <ol>
               <li>Proprietary LLMs like GPT-4 and open-source LLMs like LLama2 struggle to provide truthful responses when relying solely on their internal knowledge. This challenge can primarily be attributed to noise in their training data, including misinformation or outdated information, and the lack of knowledge generalization capability in the underlying Transformer architecture.</li>
@@ -202,11 +203,18 @@
             </div>
           </div>
           <div class="feature">
-            <img src="img/logos/safety.png" alt="safety">
+
             <input type="checkbox" id="toggle#2" class="toggle">
-            <label for="toggle#2" class="toggle-label">Safety</label>
+            <div class="banner">
+            <div class="banner-table flex-column">
+              <div class="flex-row">
+                <div class="flex-item flex-column">
+                  <h3 class="add-top-margin-small">Safety</h3>
+                </div>
+              </div>
+            </div>
+          </div>
             <div class="description">
-              <h2>Safety</h2>
               <p>Safety ensures the outputs from LLMs should only engage users in a safe and healthy conversation. In our experiments, we have found that:</p>
               <ol>
               <li>The safety of most open-source LLMs still raises concerns and lags significantly behind proprietary LLMs. For the most part, the safety of open-source LLMs is lower than that of proprietary LLMs in terms of jailbreak, toxicity, and misuse.</li>
@@ -214,6 +222,7 @@
               <li>Most LLMs struggle to balance regular and excessive safety. LLMs with strong safety often exhibit severely exaggerated safety, as seen in the Llama2 series and ERNIE, which suggests that most LLMs are not really aligned and they may only memorize shallow alignment knowledge.</li>
               </ol>
             </div>
+          </div>
           </div>
 
 
