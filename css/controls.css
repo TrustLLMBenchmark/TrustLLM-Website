@@ -11,7 +11,7 @@
 }
 
 #supportContainer {
-      max-width: 1200px;
+      max-width: 1400px;
       margin: 50px auto;
       text-align: center;
     }
@@ -30,7 +30,7 @@
 }
 
 .schoolLogo {
-  height: 100px; /* 设置logo的高度，可以根据需要调整 */
+  height: 60px; /* 设置logo的高度，可以根据需要调整 */
   margin: 10px;
 }
 
