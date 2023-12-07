@@ -11,7 +11,13 @@
 }
 
 .title-icon {
-    width: 70%; /* logo宽度设置为100%，使其尽可能大 */
+    width: 60%; /* logo宽度设置为100%，使其尽可能大 */
+    height: auto; /* 保持图片高度自适应 */
+    margin-bottom: 20px; /* 在logo和标语之间增加一些间隔 */
+}
+
+.title-icon2 {
+    width: 100%; /* logo宽度设置为100%，使其尽可能大 */
     height: auto; /* 保持图片高度自适应 */
     margin-bottom: 20px; /* 在logo和标语之间增加一些间隔 */
 }
@@ -25,6 +31,12 @@
 .supportTitle {
   text-align: center;
   font-size: 48px;
+  color: #333;
+}
+
+.supportTitle2 {
+  text-align: center;
+  font-size: 24px;
   color: #333;
 }
 
