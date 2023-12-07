@@ -35,11 +35,7 @@
             border: none; /* 移除边框 */
             box-shadow: none; /* 移除阴影 */
         }
-        #title-icon {
-            width: 70%; /* logo宽度设置为100%，使其尽可能大 */
-            height: auto; /* 保持图片高度自适应 */
-            margin-bottom: 20px; /* 在logo和标语之间增加一些间隔 */
-        }
+
         .banner {
             width: 100%;
             text-align: center; /* 使标语居中对齐 */
@@ -47,6 +43,25 @@
         .banner h3 {
             font-size: 1.5em; /* 调整标语的字体大小 */
         }
+
+        .center-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 80vh; /* 使容器充满视口高度，可根据需要调整 */
+        }
+        .arch {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .center-container img {
+            max-width: 100%; /* 确保图片不超出容器宽度 */
+            max-height: 100%; /* 确保图片不超出容器高度 */
+        }
+
   </style>
 </head>
 
@@ -58,7 +73,7 @@
 
   <div class="menu-container"></div>
   <div class="container">
-    <img src="img/logo.png" id="title-icon">
+    <img src="img/logo.png" class="title-icon">
 </div>
 
   <div class="banner">
@@ -76,41 +91,19 @@
   <div class="content-container">
     <div class="content">
       <div class="content-table flex-column">
-<!--        <div class="flex-row">-->
 
-<!--          <div class="flex-item flex-column">-->
-<!--            <h2>Updates & Releases</h2>-->
-<!--            <hr>-->
-
-<!--            <table class="publication">-->
-
-<!--              <tr>-->
-<!--                <td class="date-cell"><time datetime="2023-10-12">2023-11-12</time>:</td>-->
-<!--                <td>We will release our TrustLLM-Benchmark in early December.</td>-->
-<!--              </tr>-->
-<!--            </table>-->
-<!--          </div>-->
-
-<!--        </div>-->
-
-
-
-        
-
-          <h1>Introduction</h1>
+          <h1 class="supportTitle">Introduction</h1>
+        <br>
           <hr>
-          <p class="text">
-          </p>
+          <div class="arch">
+        <img src="img/benchmark_arch_00.png" class="title-icon" alt="Rank Card">
+        </div>
 
           <div class="flex-row">
             <div class="flex-item flex-item-stretch-4 flex-column">
               <p class="text">
                 <a class="highlight-text">Goals</a><br>
-                In the context of trustworthy LLMs, our objectives are multifaceted. First, we want to define what makes
-                an LLM trustworthy and set clear guidelines for this research area. This means selecting the right data,
-                tasks, and ways to measure an LLM's trustworthiness. Secondly, we intend to evaluate the performance of
-                existing mainstream LLMs across various aspects related to trustworthiness. Lastly, we aspire to gain
-                new insights from these evaluations that could promote progress in future research.
+                In the context of trustworthy LLMs, our objectives are multifaceted. First, we want to define what makes an LLM trustworthy and set clear guidelines for this research area. This means selecting the right data, tasks, and ways to measure an LLM's trustworthiness. Secondly, we intend to evaluate the performance of existing mainstream LLMs across various aspects related to trustworthiness. Lastly, we aspire to gain new insights from these evaluations that could promote progress in future research.
               </p>
             </div>
           </div>
@@ -120,35 +113,15 @@
             <div class="flex-item flex-item-stretch-4 flex-column">
               <p class="text">
                 <a class="highlight-text">Contribution</a><br>
-                In this work, we thoroughly explore the trustworthiness of large language models. Specifically, we
-                introduce TrustLLM, which is divided into two parts: (1) Firstly, we proposed a set of guidelines for
-                evaluating the trustworthiness of LLMs, which is a taxonomy encompassing eight aspects, including
-                truthfulness, safety, fairness, robustness, privacy, machine ethics, transparency, and accountability.
-                (2) We established a benchmark for six of these aspects due to the difficulty of benchmarking
-                transparency and accountability. This is the first comprehensive and integrated benchmark comprising
-                over 18 subcategories, covering more than 30 datasets and 16 mainstream LLMs, including both proprietary
-                and open-source LLMs.
-
+                In this work, we thoroughly explore the trustworthiness of large language models. Specifically, we introduce TrustLLM, which is divided into two parts:
+                (1) Firstly, we proposed a set of guidelines for evaluating the trustworthiness of LLMs, which is a taxonomy encompassing eight aspects, including truthfulness, safety, fairness, robustness, privacy, machine ethics, transparency, and accountability.
+                (2) We established a benchmark for six of these aspects due to the difficulty of benchmarking transparency and accountability. This is the first comprehensive and integrated benchmark comprising over 18 subcategories, covering more than 30 datasets and 16 mainstream LLMs, including both proprietary and open-source LLMs.
               </p>
             </div>
           </div>
+        <h1 class="supportTitle">Empirical Findings</h1>
+        <br>
 
-          <div class="flex-row">
-            <div class="flex-item flex-item-stretch-4 flex-column">
-              <p class="text">
-                <a class="highlight-text">Empirical Findings</a><br>
-                We have conducted a thorough and comprehensive exploration of the trustworthiness of large language
-                models. Specifically, we introduce TrustLLM, which is divided into two parts: (1) Firstly, it includes
-                guidelines for assessing the trustworthiness of LLMs, and based on these guidelines, we propose a
-                classification system for LLM trustworthiness, encompassing eight aspects, including truthfulness,
-                safety, fairness, robustness, privacy, machine ethics, transparency, and accountability. (2) We have
-                established benchmarks for six of these aspects. This is a comprehensive and integrated benchmark,
-                comprising over 15 subcategories, covering more than 25 datasets and 14 mainstream large language
-                models.
-              </p>
-            </div>
-
-          </div>
           
           <div class="features-container">
           <div class="feature">
@@ -876,80 +849,17 @@
             <!--End Text with Centered Image and Table-->
             <!-------------------------------------------------------------------------------------------->
             <!--Start Text with Adaptive Image-->
-            <div class="flex-row">
-              <div class="flex-item flex-column">
-                <h2 id="adaptive-image">Adaptive Image</h2>
-                <hr>
-                <p class="text">
-                  Li Europan lingues es membres del sam familie. Lor separat existentie es un myth. Por scientie,
-                  musica,
-                  sport etc, litot Europa usa li sam vocabular. Li lingues differe solmen in li grammatica, li
-                  pronunciation e
-                  li plu commun vocabules. Omnicos directe al desirabilite de un nov lingua franca: On refusa continuar
-                  payar
-                  custosi traductores. At solmen va esser.
-                </p>
-                <a class="image adaptive-image"
-                  style="background-image: url('img/dummay-img-long.png'); min-height: 150px;"
-                  href="img/dummay-img-long.png" target="_blank"></a>
-                <p class="text">
-                  Li Europan lingues es membres del sam familie. Lor separat existentie es un myth. Por scientie,
-                  musica,
-                  sport etc, litot Europa usa li sam vocabular. Li lingues differe solmen in li grammatica, li
-                  pronunciation e
-                  li plu commun vocabules. Omnicos directe al desirabilite de un nov lingua franca: On refusa continuar
-                  payar
-                  custosi traductores. At solmen va esser.
-                </p>
-              </div>
-            </div>
+            <h1 class="supportTitle">Ranking Card</h1>
+            <br>
+            <br>
+        <div class="center-container">
+    <img src="img/rank_card_00.png" class="title-icon" alt="Rank Card">
+        </div>
             <!--End Text with Adaptive Image-->
             <!-------------------------------------------------------------------------------------------->
           </div>
         </div>
 
-        <!-- 
-
-        <div class="flex-row">
-
-          <div class="flex-item flex-column">
-            <p class="text add-top-margin">
-              Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies
-              nisi vel
-              augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget
-              condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc,
-              blandit
-              vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae
-              sapien ut libero venenatis faucibus. Nullam quis ante.
-            </p>
-            <h3>Table of Content</h3>
-            <ul>
-              <li><a href="#text-only">Text Only</a></li>
-              <li><a href="#buttons-and-inputs">Buttons and Inputs</a></li>
-              <li><a href="#images-and-image-button">Images and Image Button</a></li>
-              <li><a href="#text-around-image">Text around Image</a></li>
-              <li><a href="#centered-image-and-table">Centered Image and Table</a></li>
-              <li><a href="#adaptive-image">Adaptive Image</a></li>
-              <li><a href="#text-with-images-and-videos">Text with Images and Videos</a></li>
-              <li><a href="#iframe">Iframe</a></li>
-              <li><a href="#list-of-projects">List of Projects</a></li>
-              <li><a href="#gallery">Gallery (responsive size)</a></li>
-              <li><a href="#masonry">Masonry (responsive size)</a></li>
-              <li><a href="#survey">Survey</a></li>
-            </ul>
-          </div>
-        </div> -->
-
-
-        <!--End Intro-->
-
-
-        <div class="section">
-          <div id="citation" class="anchor"></div>
-          <h1>Citation</h1>
-          <!-- <p>
-                  If the paper, codes, or the dataset inspires you, please cite us:
-              </p> -->
           <pre class="bibtax">@
         title={TrsLM s},
         author={
@@ -962,7 +872,8 @@
       </div>
     </div>
     <div id="supportContainer">
-<!--  <h1 id="supportTitle">Support</h1>-->
+  <h1 class="supportTitle">TrustLLM Team</h1>
+      <br>
 
   <div id="logoContainer">
     <img src="img/logos/Lehigh-University-logo.png" alt="School 1" class="schoolLogo">
