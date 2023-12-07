@@ -10,13 +10,20 @@
   justify-content: space-between; /* 确保在元素之间保持均匀的间距 */
 }
 
+.title-icon {
+    width: 70%; /* logo宽度设置为100%，使其尽可能大 */
+    height: auto; /* 保持图片高度自适应 */
+    margin-bottom: 20px; /* 在logo和标语之间增加一些间隔 */
+}
+
 #supportContainer {
       max-width: 1400px;
       margin: 50px auto;
       text-align: center;
     }
 
-#supportTitle {
+.supportTitle {
+  text-align: center;
   font-size: 48px;
   color: #333;
 }
