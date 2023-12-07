@@ -303,6 +303,8 @@ hr {
   overflow-x: auto;
   background-color: #005cbf;
   display: flex;
+
+
 }
 
 .banner .banner-table {
@@ -310,6 +312,7 @@ hr {
   width: 100%;
   margin: 0 auto;
   align-self: flex-end;
+
 }
 
 .banner .banner-table a {
@@ -333,6 +336,8 @@ hr {
   max-width: 900px;
   margin: 20px auto;
   padding: 0 30px;
+  border-radius: 10%;
+
 }
 
 .flex-column {
@@ -343,6 +348,7 @@ hr {
   align-items: stretch;
   align-content: stretch;
   box-sizing: border-box;
+
 }
 
 .flex-row-space-between {
@@ -892,6 +898,7 @@ ol.nested>li:before {
   text-decoration: underline;
 }
 
+
 .custom-table-container {
   display: grid;
   width: fit-content;
@@ -911,7 +918,7 @@ ol.nested>li:before {
   border-collapse: collapse;
   border-spacing: 0;
   empty-cells: show;
-  margin: 0;
+  margin: 1px;
   padding: 0;
 }
 

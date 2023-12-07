@@ -189,7 +189,7 @@ body {
 }
 
 .feature {
-  flex-basis: calc(50% - 10px); /* Calculate the width of each feature box, minus half the gap */
+
   margin-bottom: 20px; /* Space between rows of features */
   /* Additional styles for the feature boxes */
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
@@ -211,6 +211,31 @@ body {
   cursor: pointer; /* 如果你希望整个卡片可点击 */
   transition: box-shadow 0.3s ease, max-height 0.7s ease; /* 过渡效果 */
 }
+
+.featurecard{
+  background-color:#005cbf;
+  border-radius: 10px; /* 所有角都会有10像素的圆角 */
+  position: relative;
+
+  font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
+  font-weight: 300;
+
+
+  padding: 10px auto;
+
+  justify-content: center; /* 水平居中内容 */
+  align-items: center; /* 垂直居中内容 */
+  text-align: center; /* 确保文本在块级元素中居中对齐 */
+}
+.featurecard h2 {
+  width: 100%; /* 确保占满整个容器宽度 */
+  color: white; /* 文本颜色设置为白色 */
+  margin: 0 ; /* 移除默认的外边距 */
+
+  padding: 0;
+  line-height: 3.0;
+}
+
 
 
 .feature:hover {
@@ -266,4 +291,14 @@ body {
 .feature:hover .description {
   max-height: 2000px; /* Adjust as needed */
   padding: 20px;
+}
+
+
+.custom-table tr.bg-color-light-blue {
+  background-color: #eef3f8;/* Light blue color in the same hue as the gray tones */
+}
+
+
+.custom-table tr.bg-color-blue {
+  background-color: #d7e7f7;
 }
