@@ -5,6 +5,34 @@
  * If you want to keep this template updated, avoid modifying this file
  * Instead, add your own CSS in the custom.css file
  *************************************************************************/
+.features-container {
+    display: flex;
+  justify-content: space-between; /* 确保在元素之间保持均匀的间距 */
+}
+
+#supportContainer {
+      max-width: 1400px;
+      margin: 50px auto;
+      text-align: center;
+    }
+
+#supportTitle {
+  font-size: 48px;
+  color: #333;
+}
+
+#logoContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.schoolLogo {
+  height: 60px; /* 设置logo的高度，可以根据需要调整 */
+  margin: 10px;
+}
 
 .custom-image-button {
   display: flex;

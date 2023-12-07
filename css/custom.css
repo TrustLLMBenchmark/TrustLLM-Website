@@ -156,11 +156,11 @@ body {
 }
 
 .feature {
-  flex: 0 0 calc(27% - 10px);
+  flex: 1;
   background-color: #fff;
   border: 1px solid #e6e6e6;
   padding: 20px;
-  margin: 10px 5px 10px;
+  margin: 0 10px;
   border-radius: 10px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 
