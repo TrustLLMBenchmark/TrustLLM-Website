@@ -25,43 +25,57 @@
       opacity: 1 !important;
       font-weight: 700 !important;
     }
+
     .container {
-            text-align: center; /* 让所有内容居中对齐 */
-            height: 30vh; /* 使容器填满整个视口高度 */
-            display: flex;
-            flex-direction: column; /* 使子元素垂直排列 */
-            justify-content: center; /* 垂直居中对齐 */
-            align-items: center; /* 水平居中对齐 */
-            border: none; /* 移除边框 */
-            box-shadow: none; /* 移除阴影 */
-        }
+      text-align: center;
+      /* 让所有内容居中对齐 */
+      height: 30vh;
+      /* 使容器填满整个视口高度 */
+      display: flex;
+      flex-direction: column;
+      /* 使子元素垂直排列 */
+      justify-content: center;
+      /* 垂直居中对齐 */
+      align-items: center;
+      /* 水平居中对齐 */
+      border: none;
+      /* 移除边框 */
+      box-shadow: none;
+      /* 移除阴影 */
+    }
 
-        .banner {
-            width: 100%;
-            text-align: center; /* 使标语居中对齐 */
-        }
-        .banner h3 {
-            font-size: 1.5em; /* 调整标语的字体大小 */
-        }
+    .banner {
+      width: 100%;
+      text-align: center;
+      /* 使标语居中对齐 */
+    }
 
-        .center-container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 80vh; /* 使容器充满视口高度，可根据需要调整 */
-        }
-        .arch {
-            display: flex;
-            justify-content: center;
-            align-items: center;
+    .banner h3 {
+      font-size: 1.5em;
+      /* 调整标语的字体大小 */
+    }
 
-        }
+    .center-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 80vh;
+      /* 使容器充满视口高度，可根据需要调整 */
+    }
 
-        .center-container img {
-            max-width: 100%; /* 确保图片不超出容器宽度 */
-            max-height: 100%; /* 确保图片不超出容器高度 */
-        }
+    .arch {
+      display: flex;
+      justify-content: center;
+      align-items: center;
 
+    }
+
+    .center-container img {
+      max-width: 100%;
+      /* 确保图片不超出容器宽度 */
+      max-height: 100%;
+      /* 确保图片不超出容器高度 */
+    }
   </style>
 </head>
 
@@ -74,7 +88,7 @@
   <div class="menu-container"></div>
   <div class="container">
     <img src="img/logo.png" class="title-icon">
-</div>
+  </div>
 
   <div class="banner">
     <div class="banner-table flex-column">
@@ -92,827 +106,854 @@
     <div class="content">
       <div class="content-table flex-column">
 
-          <h1 class="supportTitle">Introduction</h1>
+        <h1 class="supportTitle">Introduction</h1>
         <br>
-          <hr>
-          <div class="arch">
-        <img src="img/benchmark_arch_00.png" class="title-icon" alt="Rank Card">
+        <hr>
+        <div class="arch">
+          <img src="img/benchmark_arch_00.png" class="title-icon" alt="Rank Card">
         </div>
 
-          <div class="flex-row">
-            <div class="flex-item flex-item-stretch-4 flex-column">
-              <p class="text">
-                <a class="highlight-text">Goals</a><br>
-                In the context of trustworthy LLMs, our objectives are multifaceted. First, we want to define what makes an LLM trustworthy and set clear guidelines for this research area. This means selecting the right data, tasks, and ways to measure an LLM's trustworthiness. Secondly, we intend to evaluate the performance of existing mainstream LLMs across various aspects related to trustworthiness. Lastly, we aspire to gain new insights from these evaluations that could promote progress in future research.
-              </p>
-            </div>
+        <div class="flex-row">
+          <div class="flex-item flex-item-stretch-4 flex-column">
+            <p class="text">
+              <a class="highlight-text">Goals</a><br>
+              In the context of trustworthy LLMs, our objectives are multifaceted. First, we want to define what makes
+              an LLM trustworthy and set clear guidelines for this research area. This means selecting the right data,
+              tasks, and ways to measure an LLM's trustworthiness. Secondly, we intend to evaluate the performance of
+              existing mainstream LLMs across various aspects related to trustworthiness. Lastly, we aspire to gain new
+              insights from these evaluations that could promote progress in future research.
+            </p>
           </div>
+        </div>
 
 
-          <div class="flex-row">
-            <div class="flex-item flex-item-stretch-4 flex-column">
-              <p class="text">
-                <a class="highlight-text">Contribution</a><br>
-                In this work, we thoroughly explore the trustworthiness of large language models. Specifically, we introduce TrustLLM, which is divided into two parts:
-                (1) Firstly, we proposed a set of guidelines for evaluating the trustworthiness of LLMs, which is a taxonomy encompassing eight aspects, including truthfulness, safety, fairness, robustness, privacy, machine ethics, transparency, and accountability.
-                (2) We established a benchmark for six of these aspects due to the difficulty of benchmarking transparency and accountability. This is the first comprehensive and integrated benchmark comprising over 18 subcategories, covering more than 30 datasets and 16 mainstream LLMs, including both proprietary and open-source LLMs.
-              </p>
-            </div>
+        <div class="flex-row">
+          <div class="flex-item flex-item-stretch-4 flex-column">
+            <p class="text">
+              <a class="highlight-text">Contribution</a><br>
+              In this work, we thoroughly explore the trustworthiness of large language models. Specifically, we
+              introduce TrustLLM, which is divided into two parts:
+              (1) Firstly, we proposed a set of guidelines for evaluating the trustworthiness of LLMs, which is a
+              taxonomy encompassing eight aspects, including truthfulness, safety, fairness, robustness, privacy,
+              machine ethics, transparency, and accountability.
+              (2) We established a benchmark for six of these aspects due to the difficulty of benchmarking transparency
+              and accountability. This is the first comprehensive and integrated benchmark comprising over 18
+              subcategories, covering more than 30 datasets and 16 mainstream LLMs, including both proprietary and
+              open-source LLMs.
+            </p>
           </div>
+        </div>
         <h1 class="supportTitle">Empirical Findings</h1>
         <br>
 
-          
-          <div class="featurecard-container">
+
+        <div class="featurecard-container">
           <div class="feature">
 
             <input type="checkbox" id="toggle" class="toggle">
-            <div class="banner">
-            <div class="banner-table flex-column">
-              <div class="flex-row">
-                <div class="flex-item flex-column">
-                  <h3 class="add-top-margin-small">Truthfulness</h3>
-                </div>
-              </div>
-            </div>
+
+
+            <div class="featurecard">
+              <h2>Truthfulness</h2>
+
           </div>
             <div class="description">
-              <p>Truthfulness means the accurate representation of information, facts, and results by an AI system. We have found that:</p>
+              <p>Truthfulness means the accurate representation of information, facts, and results by an AI system. We
+                have found that:</p>
               <ol>
-              <li>Proprietary LLMs like GPT-4 and open-source LLMs like LLama2 struggle to provide truthful responses when relying solely on their internal knowledge. This challenge can primarily be attributed to noise in their training data, including misinformation or outdated information, and the lack of knowledge generalization capability in the underlying Transformer architecture.</li>
-              <li>Moreover, all LLMs encounter challenges in zero-shot commonsense reasoning tasks. This highlights that LLMs may struggle with relatively straightforward tasks for humans to perform.</li>
-              <li>Conversely, when assessing the performance of LLMs with augmented external knowledge, they exhibit significantly improved results, surpassing the state-of-the-art performance reported in the original datasets.</li>
-              <li>We note a significant discrepancy among different hallucination tasks. Most LLMs exhibit fewer hallucinations in multiple-choice question-answering tasks than in more open-ended tasks like knowledge-grounded dialogue, likely attributed to prompt sensitivity.</li>
-              <li>We also identify a positive correlation between sycophancy and adversarial actuality. Models exhibiting lower levels of sycophancy demonstrate an ability to identify factual errors in user input and highlight them effectively.</li>
+                <li>Proprietary LLMs like GPT-4 and open-source LLMs like LLama2 struggle to provide truthful responses
+                  when relying solely on their internal knowledge. This challenge can primarily be attributed to noise
+                  in their training data, including misinformation or outdated information, and the lack of knowledge
+                  generalization capability in the underlying Transformer architecture.</li>
+                <li>Moreover, all LLMs encounter challenges in zero-shot commonsense reasoning tasks. This highlights
+                  that LLMs may struggle with relatively straightforward tasks for humans to perform.</li>
+                <li>Conversely, when assessing the performance of LLMs with augmented external knowledge, they exhibit
+                  significantly improved results, surpassing the state-of-the-art performance reported in the original
+                  datasets.</li>
+                <li>We note a significant discrepancy among different hallucination tasks. Most LLMs exhibit fewer
+                  hallucinations in multiple-choice question-answering tasks than in more open-ended tasks like
+                  knowledge-grounded dialogue, likely attributed to prompt sensitivity.</li>
+                <li>We also identify a positive correlation between sycophancy and adversarial actuality. Models
+                  exhibiting lower levels of sycophancy demonstrate an ability to identify factual errors in user input
+                  and highlight them effectively.</li>
               </ol>
             </div>
           </div>
           <div class="feature">
 
             <input type="checkbox" id="toggle#2" class="toggle">
-            <div class="banner">
-            <div class="banner-table flex-column">
-              <div class="flex-row">
-                <div class="flex-item flex-column">
-                  <h3 class="add-top-margin-small">Safety</h3>
-                </div>
-              </div>
+
+              <div class="featurecard">
+                <h2>Safety</h2>
+
             </div>
-          </div>
             <div class="description">
-              <p>Safety ensures the outputs from LLMs should only engage users in a safe and healthy conversation. In our experiments, we have found that:</p>
+              <p>Safety ensures the outputs from LLMs should only engage users in a safe and healthy conversation. In
+                our experiments, we have found that:</p>
               <ol>
-              <li>The safety of most open-source LLMs still raises concerns and lags significantly behind proprietary LLMs. For the most part, the safety of open-source LLMs is lower than that of proprietary LLMs in terms of jailbreak, toxicity, and misuse.</li>
-              <li>Importantly, LLMs cannot effectively resist various jailbreak attacks equally. We observed that different jailbreak attacks have varying success rates against LLMs, with leetspeak attacks having the highest success rate. Therefore, LLM developers should consider a comprehensive approach to defend against different types of attacks.</li>
-              <li>Most LLMs struggle to balance regular and excessive safety. LLMs with strong safety often exhibit severely exaggerated safety, as seen in the Llama2 series and ERNIE, which suggests that most LLMs are not really aligned and they may only memorize shallow alignment knowledge.</li>
+                <li>The safety of most open-source LLMs still raises concerns and lags significantly behind proprietary
+                  LLMs. For the most part, the safety of open-source LLMs is lower than that of proprietary LLMs in
+                  terms of jailbreak, toxicity, and misuse.</li>
+                <li>Importantly, LLMs cannot effectively resist various jailbreak attacks equally. We observed that
+                  different jailbreak attacks have varying success rates against LLMs, with leetspeak attacks having the
+                  highest success rate. Therefore, LLM developers should consider a comprehensive approach to defend
+                  against different types of attacks.</li>
+                <li>Most LLMs struggle to balance regular and excessive safety. LLMs with strong safety often exhibit
+                  severely exaggerated safety, as seen in the Llama2 series and ERNIE, which suggests that most LLMs are
+                  not really aligned and they may only memorize shallow alignment knowledge.</li>
               </ol>
             </div>
           </div>
           <div class="feature">
             <input type="checkbox" id="toggle#3" class="toggle">
-            <div class="banner">
-              <div class="banner-table flex-column">
-                <div class="flex-row">
-                  <div class="flex-item flex-column">
-                    <h3 class="add-top-margin-small">Fairness</h3>
-                  </div>
-                </div>
-              </div>
-            </div>
+
+
+            <div class="featurecard">
+              <h2>Fairness</h2>
+
+          </div>
+            
             <div class="description">
-              <p>Fairness is the quality or state of being fair, especially fair or impartial treatment. In our experiments, we have found that:</p>
+              <p>Fairness is the quality or state of being fair, especially fair or impartial treatment. In our
+                experiments, we have found that:</p>
               <ol>
-                <li>The performance of most LLMs in identifying stereotypes is not satisfactory, with even the best-performing GPT-4 having an overall accuracy of only 65%. When presented with sentences containing stereotypes, the percentage of agreement of different LLMs varies widely, with the best performance at only 0.5% agreement rate and the worst-performing one approaching an agreement rate of nearly 60%.</li>
-                <li>Only a few LLMs, such as Oasst-12b and Vicuna-7b, exhibit fairness in handling disparagement; most LLMs still display biases towards specific attributes when dealing with questions containing disparaging tendencies.</li>
-                <li>Regarding preferences, most LLMs perform very well on the plain baseline, maintaining objectivity and neutrality or refusing to answer directly. However, when forced to choose an option, the performance of LLMs significantly decreases.</li>
+                <li>The performance of most LLMs in identifying stereotypes is not satisfactory, with even the
+                  best-performing GPT-4 having an overall accuracy of only 65%. When presented with sentences containing
+                  stereotypes, the percentage of agreement of different LLMs varies widely, with the best performance at
+                  only 0.5% agreement rate and the worst-performing one approaching an agreement rate of nearly 60%.
+                </li>
+                <li>Only a few LLMs, such as Oasst-12b and Vicuna-7b, exhibit fairness in handling disparagement; most
+                  LLMs still display biases towards specific attributes when dealing with questions containing
+                  disparaging tendencies.</li>
+                <li>Regarding preferences, most LLMs perform very well on the plain baseline, maintaining objectivity
+                  and neutrality or refusing to answer directly. However, when forced to choose an option, the
+                  performance of LLMs significantly decreases.</li>
               </ol>
             </div>
           </div>
           <div class="feature">
             <input type="checkbox" id="toggle#4" class="toggle">
-            <div class="banner">
-              <div class="banner-table flex-column">
-                <div class="flex-row">
-                  <div class="flex-item flex-column">
-                    <h3 class="add-top-margin-small">Robustness</h3>
-                  </div>
-                </div>
-              </div>
-            </div>
+
+            <div class="featurecard">
+              <h2>Robustness</h2>
+
+          </div>
             <div class="description">
-              <p>Robustness is the ability of a system to maintain its level of performance under a variety of circumstances. In our experiments, we have found that:</p>
+              <p>Robustness is the ability of a system to maintain its level of performance under a variety of
+                circumstances. In our experiments, we have found that:</p>
               <ol>
-                <li>The Llama2 series and most proprietary LLMs outperform other open-source models in traditional downstream tasks.</li>
-                <li>There is a significant variation in LLMs' performance in open-ended tasks. The worst-performing model has an average semantic similarity of only 88% before and after perturbation, which is far below the top performer at 97.64%.</li>
-                <li>Regarding OOD robustness, LLMs also exhibit considerable variability in performance. The leading model, GPT-4, shows a RtA (Refuse to Answer) rate of over 80% in OOD detection and an F1 score averaging over 92% in OOD generalization. In contrast, the least effective models register a mere 0.4% in RtA and F1 score of around 30%.</li>
+                <li>The Llama2 series and most proprietary LLMs outperform other open-source models in traditional
+                  downstream tasks.</li>
+                <li>There is a significant variation in LLMs' performance in open-ended tasks. The worst-performing
+                  model has an average semantic similarity of only 88% before and after perturbation, which is far below
+                  the top performer at 97.64%.</li>
+                <li>Regarding OOD robustness, LLMs also exhibit considerable variability in performance. The leading
+                  model, GPT-4, shows a RtA (Refuse to Answer) rate of over 80% in OOD detection and an F1 score
+                  averaging over 92% in OOD generalization. In contrast, the least effective models register a mere 0.4%
+                  in RtA and F1 score of around 30%.</li>
               </ol>
             </div>
           </div>
           <div class="feature">
             <input type="checkbox" id="toggle#5" class="toggle">
-            <div class="banner">
-              <div class="banner-table flex-column">
-                <div class="flex-row">
-                  <div class="flex-item flex-column">
-                    <h3 class="add-top-margin-small">Privacy</h3>
-                  </div>
-                </div>
-              </div>
-            </div>
+
+
+            <div class="featurecard">
+              <h2>Privacy</h2>
+
+          </div>
             <div class="description">
-              <p>Privacy is the norms and practices that help to safeguard human autonomy, identity, and dignity. In our experiments, we have found that:</p>
+              <p>Privacy is the norms and practices that help to safeguard human autonomy, identity, and dignity. In our
+                experiments, we have found that:</p>
               <ol>
-                <li>Most LLMs possess a certain level of privacy awareness, as the probability of LLMs refusing to answer inquiries about private information dramatically increases when they are informed that they must adhere to privacy policies.</li>
-                <li>Pearson's correlation between humans and LLMs of agreement on privacy information usage varies a lot. The best-performed ChatGPT archives a 0.665 correlation, however, the correlation of Oass-12b is surprisingly less than zero, indicating a negative correlation with humans.</li>
+                <li>Most LLMs possess a certain level of privacy awareness, as the probability of LLMs refusing to
+                  answer inquiries about private information dramatically increases when they are informed that they
+                  must adhere to privacy policies.</li>
+                <li>Pearson's correlation between humans and LLMs of agreement on privacy information usage varies a
+                  lot. The best-performed ChatGPT archives a 0.665 correlation, however, the correlation of Oass-12b is
+                  surprisingly less than zero, indicating a negative correlation with humans.</li>
                 <li>We have observed that nearly all LLMs exhibit some information leakage on Enron Email Dataset.</li>
               </ol>
             </div>
           </div>
           <div class="feature">
             <input type="checkbox" id="toggle#6" class="toggle">
-            <div class="banner">
-              <div class="banner-table flex-column">
-                <div class="flex-row">
-                  <div class="flex-item flex-column">
-                    <h3 class="add-top-margin-small">Machine Ethics</h3>
-                  </div>
-                </div>
-              </div>
-            </div>
+
+
+            <div class="featurecard">
+              <h2>Machine Ethics</h2>
+
+          </div>
             <div class="description">
-              <p>Machine ethics ensure the moral behaviors of man-made machines that use artificial intelligence, otherwise known as artificial intelligent agents. In our experiments, we have found that:</p>
+              <p>Machine ethics ensure the moral behaviors of man-made machines that use artificial intelligence,
+                otherwise known as artificial intelligent agents. In our experiments, we have found that:</p>
               <ol>
-                <li>LLMs have already formed a particular set of moral values, but there is still a significant gap in aligning completely with human ethics. The accuracy of most LLMs on implicit tasks with low-ambiguity scenarios is below 70%, regardless of the dataset. When given a high-ambiguity scenario, the performance varies a lot between different LLMs as the Llama2 series reaches an RtA of 99.9%, and some are less than 70%.</li>
-                <li>Regarding emotional awareness, LLMs demonstrate higher accuracy, with the best-performing LLMs being GPT-4, which exceeds an accuracy rate of 94%.</li>
+                <li>LLMs have already formed a particular set of moral values, but there is still a significant gap in
+                  aligning completely with human ethics. The accuracy of most LLMs on implicit tasks with low-ambiguity
+                  scenarios is below 70%, regardless of the dataset. When given a high-ambiguity scenario, the
+                  performance varies a lot between different LLMs as the Llama2 series reaches an RtA of 99.9%, and some
+                  are less than 70%.</li>
+                <li>Regarding emotional awareness, LLMs demonstrate higher accuracy, with the best-performing LLMs being
+                  GPT-4, which exceeds an accuracy rate of 94%.</li>
               </ol>
             </div>
           </div>
-          
-
-          </div>
-
-
-
-
-          <br>
-<!--          <div class="feature">-->
-<!--            <h2>Taxonomy for TrustLLM</h2>-->
-<!--            <div class="flourish-embed flourish-hierarchy" data-src="visualisation/15357314">-->
-<!--              <script src="https://public.flourish.studio/resources/embed.js"></script>-->
-<!--            </div>-->
-<!--          </div>-->
 
 
         </div>
-        <h1 class="supportTitle">Task & Dataset</h1>
-    <br>
-        <div class="content">
-
-          <div class="content-table flex-column">
-            <!-------------------------------------------------------------------------------------------->
-            <!--Start Text with Centered Image and Table-->
-            <div class="flex-row">
-              <div class="flex-item flex-column">
-                <div class="custom-table-container center add-top-margin-small">
-                  <table class="custom-table">
-                    <thead>
-                      <tr class="bg-color-gray">
-                        <th>Number of</th>
-                        <th class="text-center">Unique Users</th>
-                        <th class="text-center">Smell Reports</th>
-                        <th class="text-center">Interaction Events</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td>Enthusiasts</td>
-                        <td class="text-center">9.4%</td>
-                        <td class="text-center">50.6%</td>
-                        <td class="text-center">44.8%</td>
-                      </tr>
-                      <tr class="bg-color-light-gray">
-                        <td>Explorers</td>
-                        <td class="text-center">36.1%</td>
-                        <td class="text-center">37.3%</td>
-                        <td class="text-center">27.3%</td>
-                      </tr>
-                      <tr>
-                        <td>Contributors</td>
-                        <td class="text-center">13.0%</td>
-                        <td class="text-center">12.1%</td>
-                        <td class="text-center">n/a</td>
-                      </tr>
-                      <tr class="bg-color-light-gray">
-                        <td>Observers</td>
-                        <td class="text-center">41.6%</td>
-                        <td class="text-center">n/a</td>
-                        <td class="text-center">27.9%</td>
-                      </tr>
-                    </tbody>
-                    <tfoot>
-                      <tr>
-                        <td>Size (N)</td>
-                        <td class="text-center">2,237</td>
-                        <td class="text-center">8,112</td>
-                        <td class="text-center">79,447</td>
-                      </tr>
-                    </tfoot>
-                  </table>
-                </div>
-                <p class="text text-center graph-title">
-                  This is the title for the bottom very long scrollable table
-                </p>
-                <div class="custom-table-container center add-top-margin-small">
-
-                  <table class="custom-table">
-                    <caption>Datasets and metrics in TrustLLM. ✓ means the dataset exists and ✗ means the dataset is
-                      first proposed in the TrustLLM benchmark.</caption>
-                    <thead>
-                      <tr>
-                        <th>Dataset</th>
-                        <th>Description</th>
-                        <th>Num.</th>
-                        <th>Exist</th>
-                        <th>Section</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-
-                      <!-- ...previous rows... -->
-                      <tr>
-                        <td class="text-left">SQuAD2.0</td>
-                        <td class="text-left">It combines questions in SQuAD1.1 with over 50,000 unanswerable questions.
-                        </td>
-                        <td>100</td>
-                        <td>✓</td>
-                        <td>Misinformation</td>
-                      </tr>
-                      <tr class="bg-color-light-gray">
-                        <td class="text-left">CODAH</td>
-                        <td class="text-left">It contains 28,000 commonsense questions.</td>
-                        <td>100</td>
-                        <td>✓</td>
-                        <td>Misinformation</td>
-                      </tr>
-                      <tr>
-                        <td class="text-left">HotpotQA</td>
-                        <td class="text-left">It contains 113k Wikipedia-based question-answer pairs for complex
-                          multi-hop reasoning.</td>
-                        <td>100</td>
-                        <td>✓</td>
-                        <td>Misinformation</td>
-                      </tr>
-                      <tr class="bg-color-light-gray">
-                        <td class="text-left">AdversarialQA</td>
-                        <td class="text-left">It contains 30,000 adversarial reading comprehension question-answer
-                          pairs.</td>
-                        <td>100</td>
-                        <td>✓</td>
-                        <td>Misinformation</td>
-                      </tr>
-                      <tr>
-                        <td class="text-left">Climate-FEVER</td>
-                        <td class="text-left">It contains 7,675 climate change-related claims manually curated by human
-                          fact-checkers.</td>
-                        <td>100</td>
-                        <td>✓</td>
-                        <td>Misinformation</td>
-                      </tr>
-
-                      <tr>
-                        <td class="text-left">SciFact</td>
-                        <td class="text-left">It contains 1,400 expert-written scientific claims pairs with evidence
-                          abstracts.</td>
-                        <td>100</td>
-                        <td>✓</td>
-                        <td>Misinformation</td>
-                      </tr>
-                      <tr class="bg-color-light-gray">
-                        <td class="text-left">COVID-Fact</td>
-                        <td class="text-left">It contains 4,086 real-world COVID claims.</td>
-                        <td>100</td>
-                        <td>✓</td>
-                        <td>Misinformation</td>
-                      </tr>
-                      <tr>
-                        <td class="text-left">HealthVer</td>
-                        <td class="text-left">It contains 14,330 health-related claims against scientific articles.</td>
-                        <td>100</td>
-                        <td>✓</td>
-                        <td>Misinformation</td>
-                      </tr>
-                      <tr class="bg-color-light-gray">
-                        <td class="text-left">TruthfulQA</td>
-                        <td class="text-left">The multiple-choice questions to evaluate whether a language model is
-                          truthful in generating answers to questions.</td>
-                        <td>352</td>
-                        <td>✓</td>
-                        <td>Hallucination</td>
-                      </tr>
-                      <tr>
-                        <td class="text-left">HaluEval</td>
-                        <td class="text-left">It contains 35,000 generated and human-annotated hallucinated samples.
-                        </td>
-                        <td>300</td>
-                        <td>✓</td>
-                        <td>Hallucination</td>
-                      </tr>
-                      <tr class="bg-color-light-gray">
-                        <td class="text-left">LM-exp-sycophancy</td>
-                        <td class="text-left">A dataset consists of human questions along with one sycophancy response
-                          example and one non-sycophancy response example.</td>
-                        <td>179</td>
-                        <td>✗</td>
-                        <td>Sycophancy</td>
-                      </tr>
-                      <tr>
-                        <td class="text-left">Opinion pairs</td>
-                        <td class="text-left">It contains 120 pairs of opposite opinions related to the ideology and
-                          culture/lifestyle.</td>
-                        <td>240</td>
-                        <td>✗</td>
-                        <td>Sycophancy</td>
-                      </tr>
-                      <tr class="bg-color-light-gray">
-                        <td class="text-left">WinoBias</td>
-                        <td class="text-left">It contains 3,160 sentences, split for development and testing, created by
-                          researchers familiar with the project.</td>
-                        <td>734</td>
-                        <td>✓</td>
-                        <td>Stereotype</td>
-                      </tr>
-                      <tr>
-                        <td class="text-left">StereoSet</td>
-                        <td class="text-left">It contains the sentences that measure model preferences across gender,
-                          race, religion, and profession.</td>
-                        <td>734</td>
-                        <td>✓</td>
-                        <td>Stereotype</td>
-                      </tr>
-                      <tr class="bg-color-light-gray">
-                        <td class="text-left">Adult</td>
-                        <td class="text-left">The dataset, containing attributes like sex, race, age, education, work
-                          hours, and work type, is utilized to predict salary levels for individuals.</td>
-                        <td>810</td>
-                        <td>✗</td>
-                        <td>Disparagement</td>
-                      </tr>
-                      <tr>
-                        <td class="text-left">Jailbraek Trigger</td>
-                        <td class="text-left">The dataset contains the prompts based on 14 different jailbreak attacks.
-                        </td>
-                        <td>1400</td>
-                        <td>✗</td>
-                        <td>Jailbreak, Toxicity</td>
-                      </tr>
-                      <tr class="bg-color-light-gray">
-                        <td class="text-left">Misuse (additional)</td>
-                        <td class="text-left">This dataset contains prompts crafted to assess how LLMs react when
-                          confronted by attackers or malicious users seeking to exploit the model for harmful purposes.
-                        </td>
-                        <td>261</td>
-                        <td>✗</td>
-                        <td>Misuse</td>
-                      </tr>
-                      <tr>
-                        <td class="text-left">Do-Not-Answer</td>
-                        <td class="text-left">It is curated and filtered to consist only of prompts to which responsible
-                          LLMs do not answer.</td>
-                        <td>344</td>
-                        <td>✓</td>
-                        <td>Misuse</td>
-                      </tr>
-                      <tr class="bg-color-light-gray">
-                        <td class="text-left">AdvGLUE</td>
-                        <td class="text-left">A multi-task dataset with different adversarial attacks.</td>
-                        <td>912</td>
-                        <td>✓</td>
-                        <td>Natural Noise</td>
-                      </tr>
-                      <tr>
-                        <td class="text-left">AdvInstruction</td>
-                        <td class="text-left">1200 instructions generated by 11 perturbation methods.</td>
-                        <td>1200</td>
-                        <td>✗</td>
-                        <td>Natural Noise</td>
-                      </tr>
-                      <tr class="bg-color-light-gray">
-                        <td class="text-left">ETHICS</td>
-                        <td class="text-left">It contains numerous morally relevant scenarios descriptions and their
-                          moral correctness.</td>
-                        <td>500</td>
-                        <td>✓</td>
-                        <td>Implicit Ethics</td>
-                      </tr>
-                      <tr>
-                        <td class="text-left">Social Chemistry 101</td>
-                        <td class="text-left">It contains various social norms, each consisting of an action and its
-                          label.</td>
-                        <td>500</td>
-                        <td>✓</td>
-                        <td>Implicit Ethics</td>
-                      </tr>
-                      <tr class="bg-color-light-gray">
-                        <td class="text-left">Jiminy Cricket</td>
-                        <td class="text-left">It consists of thousands of moral scenarios based on 25 adventure games.
-                        </td>
-                        <td>998</td>
-                        <td>✓</td>
-                        <td>Explicit Ethics</td>
-                      </tr>
-                      <tr>
-                        <td class="text-left">Enron Email Dataset</td>
-                        <td class="text-left">It contains approximately 500,000 emails generated by employees of the
-                          Enron Corporation.</td>
-                        <td>400</td>
-                        <td>✓</td>
-                        <td>Privacy Awareness, Privacy Leakage</td>
-                      </tr>
-                      <tr class="bg-color-light-gray">
-                        <td class="text-left">Xstest</td>
-                        <td class="text-left">It's a test suite for identifying exaggerated safety behaviors in LLMs.
-                        </td>
-                        <td>200</td>
-                        <td>✓</td>
-                        <td>Exaggerated Safety</td>
-                      </tr>
-                      <!-- ...all rows... -->
 
 
-                    </tbody>
-                  </table>
 
 
-                  <table class="custom-table">
-                    <caption>
-                      Task Overview. <span>&#9675;</span> means automatic evaluation, <span>&#9679;</span> means manual
-                      evaluation, and <span>&#9680;</span> means semi-automatic evaluation. More trustworthy LLMs are
-                      expected to have a higher value of the metrics with &uarr; and a lower value of the metrics with
-                      &darr;.
-                    </caption>
-                    <thead>
-                      <tr class="bg-color-gray">
-                        <th>Task Name</th>
-                        <th class="text-center">Metrics</th>
-                        <th class="text-center">Type</th>
-                        <th class="text-center">Eval</th>
-                        <th>Section</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td>Closed-book QA</td>
-                        <td class="text-center">Accuracy (&uarr;)</td>
-                        <td class="text-center">Generation</td>
-                        <td class="text-center">&#9675;</td>
-                        <td>Misinformation(Internal)</td>
-                      </tr>
-                      <tr class="bg-color-light-gray">
-                        <td>Fact-Checking</td>
-                        <td class="text-center">Macro F-1 (&uarr;)</td>
-                        <td class="text-center">Classification</td>
-                        <td class="text-center">&#9679;</td>
-                        <td>Misinformation(External)</td>
-                      </tr>
-                      <tr>
-                        <td>Multiple Choice QA</td>
-                        <td class="text-center">Accuracy (&uarr;)</td>
-                        <td class="text-center">Classification</td>
-                        <td class="text-center">&#9675;</td>
-                        <td>Hallucination</td>
-                      </tr>
-                      <tr class="bg-color-light-gray">
-                        <td>Hallucination Classification</td>
-                        <td class="text-center">Accuracy (&uarr;)</td>
-                        <td class="text-center">Classification</td>
-                        <td class="text-center">&#9675;</td>
-                        <td>Hallucination</td>
-                      </tr>
-                      <!-- Repeat other rows with alternating bg-color-light-gray as needed -->
+        <br>
+        <!--          <div class="feature">-->
+        <!--            <h2>Taxonomy for TrustLLM</h2>-->
+        <!--            <div class="flourish-embed flourish-hierarchy" data-src="visualisation/15357314">-->
+        <!--              <script src="https://public.flourish.studio/resources/embed.js"></script>-->
+        <!--            </div>-->
+        <!--          </div>-->
 
 
-                      <!-- ...previous rows... -->
-                      <tr>
-                        <td>Persona Sycophancy</td>
-                        <td class="text-center">Embedding similarity (&uarr;)</td>
-                        <td class="text-center">Generation</td>
-                        <td class="text-center">&#9675;</td>
-                        <td>Sycophancy</td>
-                      </tr>
-                      <tr class="bg-color-light-gray">
-                        <td>Opinion Sycophancy</td>
-                        <td class="text-center">Percentage change (&darr;)</td>
-                        <td class="text-center">Generation</td>
-                        <td class="text-center">&#9675;</td>
-                        <td>Sycophancy</td>
-                      </tr>
-                      <tr>
-                        <td>Factuality Correction</td>
-                        <td class="text-center">Percentage change (&uarr;)</td>
-                        <td class="text-center">Generation</td>
-                        <td class="text-center">&#9675;</td>
-                        <td>Adversarial Factuality</td>
-                      </tr>
-                      <tr class="bg-color-light-gray">
-                        <td>Jailbreak/Toxicity Prompt Test</td>
-                        <td class="text-center">RtA (&uarr;)</td>
-                        <td class="text-center">Generation</td>
-                        <td class="text-center">&#9675;</td>
-                        <td>Jailbreak, Toxicity</td>
-                      </tr>
-                      <tr>
-                        <td>Misuse Prompt Test</td>
-                        <td class="text-center">RtA (&uarr;)</td>
-                        <td class="text-center">Generation</td>
-                        <td class="text-center">&#9675;</td>
-                        <td>Misuse</td>
-                      </tr>
-                      <tr class="bg-color-light-gray">
-                        <td>Exaggerated Safety Test</td>
-                        <td class="text-center">RtA (&darr;)</td>
-                        <td class="text-center">Generation</td>
-                        <td class="text-center">&#9675;</td>
-                        <td>Exaggerated Safety</td>
-                      </tr>
-                      <tr>
-                        <td>Agreement on Stereotypes</td>
-                        <td class="text-center">Accuracy (&uarr;)</td>
-                        <td class="text-center">Generation</td>
-                        <td class="text-center">&#9675;</td>
-                        <td>Stereotype</td>
-                      </tr>
-                      <tr class="bg-color-light-gray">
-                        <td>Recognition of Stereotypes</td>
-                        <td class="text-center">Accuracy (&uarr;)</td>
-                        <td class="text-center">Classification</td>
-                        <td class="text-center">&#9679;</td>
-                        <td>Stereotype</td>
-                      </tr>
-                      <tr>
-                        <td>Preference Selection</td>
-                        <td class="text-center">RtA (&uarr;)</td>
-                        <td class="text-center">Generation</td>
-                        <td class="text-center">&#9675;</td>
-                        <td>Preference</td>
-                      </tr>
-                      <tr class="bg-color-light-gray">
-                        <td>Salary Prediction</td>
-                        <td class="text-center">p-value (&uarr;)</td>
-                        <td class="text-center">Generation</td>
-                        <td class="text-center">&#9679;</td>
-                        <td>Disparagement</td>
-                      </tr>
-                      <tr>
-                        <td>Adversarial Perturbation in Downstream Tasks</td>
-                        <td class="text-center">ASR (&darr;), RS (&uarr;)</td>
-                        <td class="text-center">Generation</td>
-                        <td class="text-center">&#9675;</td>
-                        <td>Natural Noise</td>
-                      </tr>
-                      <tr class="bg-color-light-gray">
-                        <td>Adversarial Perturbation in Open-Ended Tasks</td>
-                        <td class="text-center">Embedding similarity (&uarr;)</td>
-                        <td class="text-center">Generation</td>
-                        <td class="text-center">&#9675;</td>
-                        <td>Natural Noise</td>
-                      </tr>
-                      <tr>
-                        <td>Privacy Scenario Test</td>
-                        <td class="text-center">RtA (&uarr;)</td>
-                        <td class="text-center">Generation</td>
-                        <td class="text-center">&#9675;</td>
-                        <td>Privacy Awareness</td>
-                      </tr>
-                      <tr class="bg-color-light-gray">
-                        <td>Probing Privacy Information</td>
-                        <td class="text-center">RtA (&uarr;), Accuracy (&darr;)</td>
-                        <td class="text-center">Generation</td>
-                        <td class="text-center">&#9675;</td>
-                        <td>Privacy Leakage</td>
-                      </tr>
-                      <tr>
-                        <td>Moral Action Judgement</td>
-                        <td class="text-center">Accuracy (&uarr;)</td>
-                        <td class="text-center">Classification</td>
-                        <td class="text-center">&#9679;</td>
-                        <td>Implicit Ethics</td>
-                      </tr>
-                      <tr class="bg-color-light-gray">
-                        <td>Moral Reaction Judgement in Complex Environment</td>
-                        <td class="text-center">Accuracy (&uarr;)</td>
-                        <td class="text-center">Classification</td>
-                        <td class="text-center">&#9679;</td>
-                        <td>Explicit Ethics</td>
-                      </tr>
-                      <tr>
-                        <td>Emotion Classification</td>
-                        <td class="text-center">Accuracy (&uarr;)</td>
-                        <td class="text-center">Classification</td>
-                        <td class="text-center">&#9675;</td>
-                        <td>Emotional Awareness</td>
-                      </tr>
+      </div>
+      <h1 class="supportTitle">Task & Dataset</h1>
+      <br>
+      <div class="content">
 
-                    </tbody>
-                  </table>
+        <div class="content-table flex-column">
+          <!-------------------------------------------------------------------------------------------->
+          <!--Start Text with Centered Image and Table-->
+          <div class="flex-row">
+            <div class="flex-item flex-column">
+              <div class="custom-table-container center add-top-margin-small">
+                <table class="custom-table">
+                  <thead>
+                    <tr class="bg-color-blue">
+                      <th>Number of</th>
+                      <th class="text-center">Unique Users</th>
+                      <th class="text-center">Smell Reports</th>
+                      <th class="text-center">Interaction Events</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Enthusiasts</td>
+                      <td class="text-center">9.4%</td>
+                      <td class="text-center">50.6%</td>
+                      <td class="text-center">44.8%</td>
+                    </tr>
+                    <tr class="bg-color-light-blue">
+                      <td>Explorers</td>
+                      <td class="text-center">36.1%</td>
+                      <td class="text-center">37.3%</td>
+                      <td class="text-center">27.3%</td>
+                    </tr>
+                    <tr>
+                      <td>Contributors</td>
+                      <td class="text-center">13.0%</td>
+                      <td class="text-center">12.1%</td>
+                      <td class="text-center">n/a</td>
+                    </tr>
+                    <tr class="bg-color-light-blue">
+                      <td>Observers</td>
+                      <td class="text-center">41.6%</td>
+                      <td class="text-center">n/a</td>
+                      <td class="text-center">27.9%</td>
+                    </tr>
+                  </tbody>
+                  <tfoot>
+                    <tr>
+                      <td>Size (N)</td>
+                      <td class="text-center">2,237</td>
+                      <td class="text-center">8,112</td>
+                      <td class="text-center">79,447</td>
+                    </tr>
+                  </tfoot>
+                </table>
+              </div>
+              <p class="text text-center graph-title">
+                This is the title for the bottom very long scrollable table
+              </p>
+              <div class="custom-table-container center add-top-margin-small">
+                <table class="custom-table">
+                  <caption>Datasets and metrics in TrustLLM. ✓ means the dataset exists and ✗ means the dataset is
+                    first proposed in the TrustLLM benchmark.</caption>
+                  <thead>
+                    <tr class="bg-color-blue">
+                      <th>Dataset</th>
+                      <th>Description</th>
+                      <th>Num.</th>
+                      <th>Exist</th>
+                      <th>Section</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+
+                    <!-- ...previous rows... -->
+                    <tr>
+                      <td class="text-left">SQuAD2.0</td>
+                      <td class="text-left">It combines questions in SQuAD1.1 with over 50,000 unanswerable questions.
+                      </td>
+                      <td>100</td>
+                      <td>✓</td>
+                      <td>Misinformation</td>
+                    </tr>
+                    <tr class="bg-color-light-blue">
+                      <td class="text-left">CODAH</td>
+                      <td class="text-left">It contains 28,000 commonsense questions.</td>
+                      <td>100</td>
+                      <td>✓</td>
+                      <td>Misinformation</td>
+                    </tr>
+                    <tr>
+                      <td class="text-left">HotpotQA</td>
+                      <td class="text-left">It contains 113k Wikipedia-based question-answer pairs for complex
+                        multi-hop reasoning.</td>
+                      <td>100</td>
+                      <td>✓</td>
+                      <td>Misinformation</td>
+                    </tr>
+                    <tr class="bg-color-light-blue">
+                      <td class="text-left">AdversarialQA</td>
+                      <td class="text-left">It contains 30,000 adversarial reading comprehension question-answer
+                        pairs.</td>
+                      <td>100</td>
+                      <td>✓</td>
+                      <td>Misinformation</td>
+                    </tr>
+                    <tr>
+                      <td class="text-left">Climate-FEVER</td>
+                      <td class="text-left">It contains 7,675 climate change-related claims manually curated by human
+                        fact-checkers.</td>
+                      <td>100</td>
+                      <td>✓</td>
+                      <td>Misinformation</td>
+                    </tr>
+
+                    <tr>
+                      <td class="text-left">SciFact</td>
+                      <td class="text-left">It contains 1,400 expert-written scientific claims pairs with evidence
+                        abstracts.</td>
+                      <td>100</td>
+                      <td>✓</td>
+                      <td>Misinformation</td>
+                    </tr>
+                    <tr class="bg-color-light-blue">
+                      <td class="text-left">COVID-Fact</td>
+                      <td class="text-left">It contains 4,086 real-world COVID claims.</td>
+                      <td>100</td>
+                      <td>✓</td>
+                      <td>Misinformation</td>
+                    </tr>
+                    <tr>
+                      <td class="text-left">HealthVer</td>
+                      <td class="text-left">It contains 14,330 health-related claims against scientific articles.</td>
+                      <td>100</td>
+                      <td>✓</td>
+                      <td>Misinformation</td>
+                    </tr>
+                    <tr class="bg-color-light-blue">
+                      <td class="text-left">TruthfulQA</td>
+                      <td class="text-left">The multiple-choice questions to evaluate whether a language model is
+                        truthful in generating answers to questions.</td>
+                      <td>352</td>
+                      <td>✓</td>
+                      <td>Hallucination</td>
+                    </tr>
+                    <tr>
+                      <td class="text-left">HaluEval</td>
+                      <td class="text-left">It contains 35,000 generated and human-annotated hallucinated samples.
+                      </td>
+                      <td>300</td>
+                      <td>✓</td>
+                      <td>Hallucination</td>
+                    </tr>
+                    <tr class="bg-color-light-blue">
+                      <td class="text-left">LM-exp-sycophancy</td>
+                      <td class="text-left">A dataset consists of human questions along with one sycophancy response
+                        example and one non-sycophancy response example.</td>
+                      <td>179</td>
+                      <td>✗</td>
+                      <td>Sycophancy</td>
+                    </tr>
+                    <tr>
+                      <td class="text-left">Opinion pairs</td>
+                      <td class="text-left">It contains 120 pairs of opposite opinions related to the ideology and
+                        culture/lifestyle.</td>
+                      <td>240</td>
+                      <td>✗</td>
+                      <td>Sycophancy</td>
+                    </tr>
+                    <tr class="bg-color-light-blue">
+                      <td class="text-left">WinoBias</td>
+                      <td class="text-left">It contains 3,160 sentences, split for development and testing, created by
+                        researchers familiar with the project.</td>
+                      <td>734</td>
+                      <td>✓</td>
+                      <td>Stereotype</td>
+                    </tr>
+                    <tr>
+                      <td class="text-left">StereoSet</td>
+                      <td class="text-left">It contains the sentences that measure model preferences across gender,
+                        race, religion, and profession.</td>
+                      <td>734</td>
+                      <td>✓</td>
+                      <td>Stereotype</td>
+                    </tr>
+                    <tr class="bg-color-light-blue">
+                      <td class="text-left">Adult</td>
+                      <td class="text-left">The dataset, containing attributes like sex, race, age, education, work
+                        hours, and work type, is utilized to predict salary levels for individuals.</td>
+                      <td>810</td>
+                      <td>✗</td>
+                      <td>Disparagement</td>
+                    </tr>
+                    <tr>
+                      <td class="text-left">Jailbraek Trigger</td>
+                      <td class="text-left">The dataset contains the prompts based on 14 different jailbreak attacks.
+                      </td>
+                      <td>1400</td>
+                      <td>✗</td>
+                      <td>Jailbreak, Toxicity</td>
+                    </tr>
+                    <tr class="bg-color-light-blue">
+                      <td class="text-left">Misuse (additional)</td>
+                      <td class="text-left">This dataset contains prompts crafted to assess how LLMs react when
+                        confronted by attackers or malicious users seeking to exploit the model for harmful purposes.
+                      </td>
+                      <td>261</td>
+                      <td>✗</td>
+                      <td>Misuse</td>
+                    </tr>
+                    <tr>
+                      <td class="text-left">Do-Not-Answer</td>
+                      <td class="text-left">It is curated and filtered to consist only of prompts to which responsible
+                        LLMs do not answer.</td>
+                      <td>344</td>
+                      <td>✓</td>
+                      <td>Misuse</td>
+                    </tr>
+                    <tr class="bg-color-light-blue">
+                      <td class="text-left">AdvGLUE</td>
+                      <td class="text-left">A multi-task dataset with different adversarial attacks.</td>
+                      <td>912</td>
+                      <td>✓</td>
+                      <td>Natural Noise</td>
+                    </tr>
+                    <tr>
+                      <td class="text-left">AdvInstruction</td>
+                      <td class="text-left">1200 instructions generated by 11 perturbation methods.</td>
+                      <td>1200</td>
+                      <td>✗</td>
+                      <td>Natural Noise</td>
+                    </tr>
+                    <tr class="bg-color-light-blue">
+                      <td class="text-left">ETHICS</td>
+                      <td class="text-left">It contains numerous morally relevant scenarios descriptions and their
+                        moral correctness.</td>
+                      <td>500</td>
+                      <td>✓</td>
+                      <td>Implicit Ethics</td>
+                    </tr>
+                    <tr>
+                      <td class="text-left">Social Chemistry 101</td>
+                      <td class="text-left">It contains various social norms, each consisting of an action and its
+                        label.</td>
+                      <td>500</td>
+                      <td>✓</td>
+                      <td>Implicit Ethics</td>
+                    </tr>
+                    <tr class="bg-color-light-blue">
+                      <td class="text-left">Jiminy Cricket</td>
+                      <td class="text-left">It consists of thousands of moral scenarios based on 25 adventure games.
+                      </td>
+                      <td>998</td>
+                      <td>✓</td>
+                      <td>Explicit Ethics</td>
+                    </tr>
+                    <tr>
+                      <td class="text-left">Enron Email Dataset</td>
+                      <td class="text-left">It contains approximately 500,000 emails generated by employees of the
+                        Enron Corporation.</td>
+                      <td>400</td>
+                      <td>✓</td>
+                      <td>Privacy Awareness, Privacy Leakage</td>
+                    </tr>
+                    <tr class="bg-color-light-blue">
+                      <td class="text-left">Xstest</td>
+                      <td class="text-left">It's a test suite for identifying exaggerated safety behaviors in LLMs.
+                      </td>
+                      <td>200</td>
+                      <td>✓</td>
+                      <td>Exaggerated Safety</td>
+                    </tr>
+                    <!-- ...all rows... -->
 
 
-                  <table class=" custom-table">
-                    <thead>
-                      <tr class="bg-color-gray">
-                        <th class="text-center">Smell Rating</th>
-                        <th class="text-center">2019</th>
-                        <th class="text-center">2018</th>
-                        <th class="text-center">2017</th>
-                        <th class="text-center">2016</th>
-                        <th class="text-center">2015</th>
-                        <th class="text-center">2014</th>
-                        <th class="text-center">2013</th>
-                        <th class="text-center">2012</th>
-                        <th class="text-center">2011</th>
-                        <th class="text-center">2010</th>
-                        <th class="text-center">2009</th>
-                        <th class="text-center">2008</th>
-                        <th class="text-center">2007</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td class="text-center">1</td>
-                        <td class="text-center">1,711 (9.5%)</td>
-                        <td class="text-center">1,199 (13.0%)</td>
-                        <td class="text-center">1,658 (20.4%)</td>
-                        <td class="text-center">1,199 (13.0%)</td>
-                        <td class="text-center">1,658 (20.4%)</td>
-                        <td class="text-center">1,199 (13.0%)</td>
-                        <td class="text-center">1,658 (20.4%)</td>
-                        <td class="text-center">1,199 (13.0%)</td>
-                        <td class="text-center">1,658 (20.4%)</td>
-                        <td class="text-center">1,199 (13.0%)</td>
-                        <td class="text-center">1,658 (20.4%)</td>
-                        <td class="text-center">1,199 (13.0%)</td>
-                        <td class="text-center">1,658 (20.4%)</td>
-                      </tr>
-                      <tr class="bg-color-light-gray">
-                        <td class="text-center">2</td>
-                        <td class="text-center">798 (4.4%)</td>
-                        <td class="text-center">497 (5.4%)</td>
-                        <td class="text-center">665 (8.2%)</td>
-                        <td class="text-center">497 (5.4%)</td>
-                        <td class="text-center">665 (8.2%)</td>
-                        <td class="text-center">497 (5.4%)</td>
-                        <td class="text-center">665 (8.2%)</td>
-                        <td class="text-center">497 (5.4%)</td>
-                        <td class="text-center">665 (8.2%)</td>
-                        <td class="text-center">497 (5.4%)</td>
-                        <td class="text-center">665 (8.2%)</td>
-                        <td class="text-center">497 (5.4%)</td>
-                        <td class="text-center">665 (8.2%)</td>
-                      </tr>
-                      <tr>
-                        <td class="text-center">3</td>
-                        <td class="text-center">4,305 (23.9%)</td>
-                        <td class="text-center">2,649 (28.8%)</td>
-                        <td class="text-center">2,246 (27.7%)</td>
-                        <td class="text-center">2,649 (28.8%)</td>
-                        <td class="text-center">2,246 (27.7%)</td>
-                        <td class="text-center">2,649 (28.8%)</td>
-                        <td class="text-center">2,246 (27.7%)</td>
-                        <td class="text-center">2,649 (28.8%)</td>
-                        <td class="text-center">2,246 (27.7%)</td>
-                        <td class="text-center">2,649 (28.8%)</td>
-                        <td class="text-center">2,246 (27.7%)</td>
-                        <td class="text-center">2,649 (28.8%)</td>
-                        <td class="text-center">2,246 (27.7%)</td>
-                      </tr>
-                      <tr class="bg-color-light-gray">
-                        <td class="text-center">4</td>
-                        <td class="text-center">5,804 (32.3%)</td>
-                        <td class="text-center">2,932 (31.9%)</td>
-                        <td class="text-center">2,171 (26.8%)</td>
-                        <td class="text-center">2,932 (31.9%)</td>
-                        <td class="text-center">2,171 (26.8%)</td>
-                        <td class="text-center">2,932 (31.9%)</td>
-                        <td class="text-center">2,171 (26.8%)</td>
-                        <td class="text-center">2,932 (31.9%)</td>
-                        <td class="text-center">2,171 (26.8%)</td>
-                        <td class="text-center">2,932 (31.9%)</td>
-                        <td class="text-center">2,171 (26.8%)</td>
-                        <td class="text-center">2,932 (31.9%)</td>
-                        <td class="text-center">2,171 (26.8%)</td>
-                      </tr>
-                      <tr>
-                        <td class="text-center">5</td>
-                        <td class="text-center">5,356 (29.8%)</td>
-                        <td class="text-center">1,918 (20.9%)</td>
-                        <td class="text-center">1,372 (16.9%)</td>
-                        <td class="text-center">1,918 (20.9%)</td>
-                        <td class="text-center">1,372 (16.9%)</td>
-                        <td class="text-center">1,918 (20.9%)</td>
-                        <td class="text-center">1,372 (16.9%)</td>
-                        <td class="text-center">1,918 (20.9%)</td>
-                        <td class="text-center">1,372 (16.9%)</td>
-                        <td class="text-center">1,918 (20.9%)</td>
-                        <td class="text-center">1,372 (16.9%)</td>
-                        <td class="text-center">1,918 (20.9%)</td>
-                        <td class="text-center">1,372 (16.9%)</td>
-                      </tr>
-                    </tbody>
-                    <tfoot>
-                      <tr>
-                        <td class="text-center">Sum</td>
-                        <td class="text-center">17,974</td>
-                        <td class="text-center">9,195</td>
-                        <td class="text-center">8,112</td>
-                        <td class="text-center">9,195</td>
-                        <td class="text-center">8,112</td>
-                        <td class="text-center">9,195</td>
-                        <td class="text-center">8,112</td>
-                        <td class="text-center">9,195</td>
-                        <td class="text-center">8,112</td>
-                        <td class="text-center">9,195</td>
-                        <td class="text-center">8,112</td>
-                        <td class="text-center">9,195</td>
-                        <td class="text-center">8,112</td>
-                      </tr>
-                    </tfoot>
-                  </table>
-                </div>
-                <p class="text">
-                  Li Europan lingues es membres del sam familie. Lor separat existentie es un myth. Por scientie,
-                  musica,
-                  sport etc, litot Europa usa li sam vocabular. Li lingues differe solmen in li grammatica, li
-                  pronunciation e
-                  li plu commun vocabules. Omnicos directe al desirabilite de un nov lingua franca: On refusa continuar
-                  payar
-                  custosi traductores. At solmen va esser.
-                </p>
+                  </tbody>
+                </table>
+              </div>
+              <div class="custom-table-container center add-top-margin-small">
+                <table class="custom-table">
+                  <caption>
+                    Task Overview. <span>&#9675;</span> means automatic evaluation, <span>&#9679;</span> means manual
+                    evaluation, and <span>&#9680;</span> means semi-automatic evaluation. More trustworthy LLMs are
+                    expected to have a higher value of the metrics with &uarr; and a lower value of the metrics with
+                    &darr;.
+                  </caption>
+                  <thead>
+                    <tr class="bg-color-blue">
+                      <th>Task Name</th>
+                      <th class="text-center">Metrics</th>
+                      <th class="text-center">Type</th>
+                      <th class="text-center">Eval</th>
+                      <th>Section</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Closed-book QA</td>
+                      <td class="text-center">Accuracy (&uarr;)</td>
+                      <td class="text-center">Generation</td>
+                      <td class="text-center">&#9675;</td>
+                      <td>Misinformation(Internal)</td>
+                    </tr>
+                    <tr class="bg-color-light-blue">
+                      <td>Fact-Checking</td>
+                      <td class="text-center">Macro F-1 (&uarr;)</td>
+                      <td class="text-center">Classification</td>
+                      <td class="text-center">&#9679;</td>
+                      <td>Misinformation(External)</td>
+                    </tr>
+                    <tr>
+                      <td>Multiple Choice QA</td>
+                      <td class="text-center">Accuracy (&uarr;)</td>
+                      <td class="text-center">Classification</td>
+                      <td class="text-center">&#9675;</td>
+                      <td>Hallucination</td>
+                    </tr>
+                    <tr class="bg-color-light-blue">
+                      <td>Hallucination Classification</td>
+                      <td class="text-center">Accuracy (&uarr;)</td>
+                      <td class="text-center">Classification</td>
+                      <td class="text-center">&#9675;</td>
+                      <td>Hallucination</td>
+                    </tr>
+                    <!-- Repeat other rows with alternating bg-color-light-blue as needed -->
+
+
+                    <!-- ...previous rows... -->
+                    <tr>
+                      <td>Persona Sycophancy</td>
+                      <td class="text-center">Embedding similarity (&uarr;)</td>
+                      <td class="text-center">Generation</td>
+                      <td class="text-center">&#9675;</td>
+                      <td>Sycophancy</td>
+                    </tr>
+                    <tr class="bg-color-light-blue">
+                      <td>Opinion Sycophancy</td>
+                      <td class="text-center">Percentage change (&darr;)</td>
+                      <td class="text-center">Generation</td>
+                      <td class="text-center">&#9675;</td>
+                      <td>Sycophancy</td>
+                    </tr>
+                    <tr>
+                      <td>Factuality Correction</td>
+                      <td class="text-center">Percentage change (&uarr;)</td>
+                      <td class="text-center">Generation</td>
+                      <td class="text-center">&#9675;</td>
+                      <td>Adversarial Factuality</td>
+                    </tr>
+                    <tr class="bg-color-light-blue">
+                      <td>Jailbreak/Toxicity Prompt Test</td>
+                      <td class="text-center">RtA (&uarr;)</td>
+                      <td class="text-center">Generation</td>
+                      <td class="text-center">&#9675;</td>
+                      <td>Jailbreak, Toxicity</td>
+                    </tr>
+                    <tr>
+                      <td>Misuse Prompt Test</td>
+                      <td class="text-center">RtA (&uarr;)</td>
+                      <td class="text-center">Generation</td>
+                      <td class="text-center">&#9675;</td>
+                      <td>Misuse</td>
+                    </tr>
+                    <tr class="bg-color-light-blue">
+                      <td>Exaggerated Safety Test</td>
+                      <td class="text-center">RtA (&darr;)</td>
+                      <td class="text-center">Generation</td>
+                      <td class="text-center">&#9675;</td>
+                      <td>Exaggerated Safety</td>
+                    </tr>
+                    <tr>
+                      <td>Agreement on Stereotypes</td>
+                      <td class="text-center">Accuracy (&uarr;)</td>
+                      <td class="text-center">Generation</td>
+                      <td class="text-center">&#9675;</td>
+                      <td>Stereotype</td>
+                    </tr>
+                    <tr class="bg-color-light-blue">
+                      <td>Recognition of Stereotypes</td>
+                      <td class="text-center">Accuracy (&uarr;)</td>
+                      <td class="text-center">Classification</td>
+                      <td class="text-center">&#9679;</td>
+                      <td>Stereotype</td>
+                    </tr>
+                    <tr>
+                      <td>Preference Selection</td>
+                      <td class="text-center">RtA (&uarr;)</td>
+                      <td class="text-center">Generation</td>
+                      <td class="text-center">&#9675;</td>
+                      <td>Preference</td>
+                    </tr>
+                    <tr class="bg-color-light-blue">
+                      <td>Salary Prediction</td>
+                      <td class="text-center">p-value (&uarr;)</td>
+                      <td class="text-center">Generation</td>
+                      <td class="text-center">&#9679;</td>
+                      <td>Disparagement</td>
+                    </tr>
+                    <tr>
+                      <td>Adversarial Perturbation in Downstream Tasks</td>
+                      <td class="text-center">ASR (&darr;), RS (&uarr;)</td>
+                      <td class="text-center">Generation</td>
+                      <td class="text-center">&#9675;</td>
+                      <td>Natural Noise</td>
+                    </tr>
+                    <tr class="bg-color-light-blue">
+                      <td>Adversarial Perturbation in Open-Ended Tasks</td>
+                      <td class="text-center">Embedding similarity (&uarr;)</td>
+                      <td class="text-center">Generation</td>
+                      <td class="text-center">&#9675;</td>
+                      <td>Natural Noise</td>
+                    </tr>
+                    <tr>
+                      <td>Privacy Scenario Test</td>
+                      <td class="text-center">RtA (&uarr;)</td>
+                      <td class="text-center">Generation</td>
+                      <td class="text-center">&#9675;</td>
+                      <td>Privacy Awareness</td>
+                    </tr>
+                    <tr class="bg-color-light-blue">
+                      <td>Probing Privacy Information</td>
+                      <td class="text-center">RtA (&uarr;), Accuracy (&darr;)</td>
+                      <td class="text-center">Generation</td>
+                      <td class="text-center">&#9675;</td>
+                      <td>Privacy Leakage</td>
+                    </tr>
+                    <tr>
+                      <td>Moral Action Judgement</td>
+                      <td class="text-center">Accuracy (&uarr;)</td>
+                      <td class="text-center">Classification</td>
+                      <td class="text-center">&#9679;</td>
+                      <td>Implicit Ethics</td>
+                    </tr>
+                    <tr class="bg-color-light-blue">
+                      <td>Moral Reaction Judgement in Complex Environment</td>
+                      <td class="text-center">Accuracy (&uarr;)</td>
+                      <td class="text-center">Classification</td>
+                      <td class="text-center">&#9679;</td>
+                      <td>Explicit Ethics</td>
+                    </tr>
+                    <tr>
+                      <td>Emotion Classification</td>
+                      <td class="text-center">Accuracy (&uarr;)</td>
+                      <td class="text-center">Classification</td>
+                      <td class="text-center">&#9675;</td>
+                      <td>Emotional Awareness</td>
+                    </tr>
+
+                  </tbody>
+                </table>
+              </div>
+              <div class="custom-table-container center add-top-margin-small">
+                <table class=" custom-table">
+                  <thead>
+                    <tr class="bg-color-blue">
+                      <th class="text-center">Smell Rating</th>
+                      <th class="text-center">2019</th>
+                      <th class="text-center">2018</th>
+                      <th class="text-center">2017</th>
+                      <th class="text-center">2016</th>
+                      <th class="text-center">2015</th>
+                      <th class="text-center">2014</th>
+                      <th class="text-center">2013</th>
+                      <th class="text-center">2012</th>
+                      <th class="text-center">2011</th>
+                      <th class="text-center">2010</th>
+                      <th class="text-center">2009</th>
+                      <th class="text-center">2008</th>
+                      <th class="text-center">2007</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="text-center">1</td>
+                      <td class="text-center">1,711 (9.5%)</td>
+                      <td class="text-center">1,199 (13.0%)</td>
+                      <td class="text-center">1,658 (20.4%)</td>
+                      <td class="text-center">1,199 (13.0%)</td>
+                      <td class="text-center">1,658 (20.4%)</td>
+                      <td class="text-center">1,199 (13.0%)</td>
+                      <td class="text-center">1,658 (20.4%)</td>
+                      <td class="text-center">1,199 (13.0%)</td>
+                      <td class="text-center">1,658 (20.4%)</td>
+                      <td class="text-center">1,199 (13.0%)</td>
+                      <td class="text-center">1,658 (20.4%)</td>
+                      <td class="text-center">1,199 (13.0%)</td>
+                      <td class="text-center">1,658 (20.4%)</td>
+                    </tr>
+                    <tr class="bg-color-light-blue">
+                      <td class="text-center">2</td>
+                      <td class="text-center">798 (4.4%)</td>
+                      <td class="text-center">497 (5.4%)</td>
+                      <td class="text-center">665 (8.2%)</td>
+                      <td class="text-center">497 (5.4%)</td>
+                      <td class="text-center">665 (8.2%)</td>
+                      <td class="text-center">497 (5.4%)</td>
+                      <td class="text-center">665 (8.2%)</td>
+                      <td class="text-center">497 (5.4%)</td>
+                      <td class="text-center">665 (8.2%)</td>
+                      <td class="text-center">497 (5.4%)</td>
+                      <td class="text-center">665 (8.2%)</td>
+                      <td class="text-center">497 (5.4%)</td>
+                      <td class="text-center">665 (8.2%)</td>
+                    </tr>
+                    <tr>
+                      <td class="text-center">3</td>
+                      <td class="text-center">4,305 (23.9%)</td>
+                      <td class="text-center">2,649 (28.8%)</td>
+                      <td class="text-center">2,246 (27.7%)</td>
+                      <td class="text-center">2,649 (28.8%)</td>
+                      <td class="text-center">2,246 (27.7%)</td>
+                      <td class="text-center">2,649 (28.8%)</td>
+                      <td class="text-center">2,246 (27.7%)</td>
+                      <td class="text-center">2,649 (28.8%)</td>
+                      <td class="text-center">2,246 (27.7%)</td>
+                      <td class="text-center">2,649 (28.8%)</td>
+                      <td class="text-center">2,246 (27.7%)</td>
+                      <td class="text-center">2,649 (28.8%)</td>
+                      <td class="text-center">2,246 (27.7%)</td>
+                    </tr>
+                    <tr class="bg-color-light-blue">
+                      <td class="text-center">4</td>
+                      <td class="text-center">5,804 (32.3%)</td>
+                      <td class="text-center">2,932 (31.9%)</td>
+                      <td class="text-center">2,171 (26.8%)</td>
+                      <td class="text-center">2,932 (31.9%)</td>
+                      <td class="text-center">2,171 (26.8%)</td>
+                      <td class="text-center">2,932 (31.9%)</td>
+                      <td class="text-center">2,171 (26.8%)</td>
+                      <td class="text-center">2,932 (31.9%)</td>
+                      <td class="text-center">2,171 (26.8%)</td>
+                      <td class="text-center">2,932 (31.9%)</td>
+                      <td class="text-center">2,171 (26.8%)</td>
+                      <td class="text-center">2,932 (31.9%)</td>
+                      <td class="text-center">2,171 (26.8%)</td>
+                    </tr>
+                    <tr>
+                      <td class="text-center">5</td>
+                      <td class="text-center">5,356 (29.8%)</td>
+                      <td class="text-center">1,918 (20.9%)</td>
+                      <td class="text-center">1,372 (16.9%)</td>
+                      <td class="text-center">1,918 (20.9%)</td>
+                      <td class="text-center">1,372 (16.9%)</td>
+                      <td class="text-center">1,918 (20.9%)</td>
+                      <td class="text-center">1,372 (16.9%)</td>
+                      <td class="text-center">1,918 (20.9%)</td>
+                      <td class="text-center">1,372 (16.9%)</td>
+                      <td class="text-center">1,918 (20.9%)</td>
+                      <td class="text-center">1,372 (16.9%)</td>
+                      <td class="text-center">1,918 (20.9%)</td>
+                      <td class="text-center">1,372 (16.9%)</td>
+                    </tr>
+                  </tbody>
+                  <tfoot>
+                    <tr>
+                      <td class="text-center">Sum</td>
+                      <td class="text-center">17,974</td>
+                      <td class="text-center">9,195</td>
+                      <td class="text-center">8,112</td>
+                      <td class="text-center">9,195</td>
+                      <td class="text-center">8,112</td>
+                      <td class="text-center">9,195</td>
+                      <td class="text-center">8,112</td>
+                      <td class="text-center">9,195</td>
+                      <td class="text-center">8,112</td>
+                      <td class="text-center">9,195</td>
+                      <td class="text-center">8,112</td>
+                      <td class="text-center">9,195</td>
+                      <td class="text-center">8,112</td>
+                    </tr>
+                  </tfoot>
+                </table>
+
               </div>
             </div>
-            <!--End Text with Centered Image and Table-->
-            <!-------------------------------------------------------------------------------------------->
-            <!--Start Text with Adaptive Image-->
-            <h1 class="supportTitle">Ranking Card</h1>
-            <br>
-            <br>
-        <div class="center-container">
-    <img src="img/rank_card_00.png" class="title-icon" alt="Rank Card">
-        </div>
-            <!--End Text with Adaptive Image-->
-            <!-------------------------------------------------------------------------------------------->
           </div>
+          <!--End Text with Centered Image and Table-->
+          <!-------------------------------------------------------------------------------------------->
+          <!--Start Text with Adaptive Image-->
+          <h1 class="supportTitle">Ranking Card</h1>
+          <br>
+          <br>
+          <div class="center-container">
+            <img src="img/rank_card_00.png" class="title-icon" alt="Rank Card">
+          </div>
+          <!--End Text with Adaptive Image-->
+          <!-------------------------------------------------------------------------------------------->
         </div>
+      </div>
 
-          <pre class="bibtax">@
+      <pre class="bibtax">@
         title={TrsLM s},
         author={
         year={2023}
         }
               </pre>
-          <br>
-        </div>
-
-      </div>
-    </div>
-    <div id="supportContainer">
-  <h1 class="supportTitle">TrustLLM Team</h1>
       <br>
+    </div>
 
-  <div id="logoContainer">
-    <img src="img/logos/Lehigh-University-logo.png" alt="School 1" class="schoolLogo">
-    <img src="img/logos/W&M.png" alt="School 3" class="schoolLogo">
-    <img src="img/logos/stanford.png" alt="School 3" class="schoolLogo">
-    <img src="img/logos/UCLA.jpeg" alt="School 3" class="schoolLogo">
-    <img src="img/logos/CMU.png" alt="School 3" class="schoolLogo">
-    <img src="img/logos/UIUC.png" alt="School 3" class="schoolLogo">
-    <img src="img/logos/TAMU.png" alt="School 3" class="schoolLogo">
-    <img src="img/logos/ND.png" alt="School 2" class="schoolLogo">
-    <img src="img/logos/duke.png" alt="School 2" class="schoolLogo">
-    <img src="img/logos/UMD.png" alt="School 2" class="schoolLogo">
-    <img src="img/logos/JHU.jpeg" alt="School 2" class="schoolLogo">
-    <img src="img/logos/UIC.png" alt="School 2" class="schoolLogo">
-    <img src="img/logos/UGA.png" alt="School 2" class="schoolLogo">
-    <img src="img/logos/MSU.png" alt="School 2" class="schoolLogo">
-    <img src="img/logos/UWM.png" alt="School 2" class="schoolLogo">
-    <img src="img/logos/UCSB.png" alt="School 2" class="schoolLogo">
-    <img src="img/logos/uconn.png" alt="School 2" class="schoolLogo">
-    <img src="img/logos/vt.png" alt="School 2" class="schoolLogo">
-    <img src="img/logos/IIT.gif" alt="School 2" class="schoolLogo">
-    <img src="img/logos/USC.png" alt="School 2" class="schoolLogo">
-    <img src="img/logos/CISPA.png" alt="School 2" class="schoolLogo">
-    <img src="img/logos/MGH.png" alt="School 2" class="schoolLogo">
-
-    <img src="img/logos/Microsoft.png" alt="School 3" class="schoolLogo">
-    <img src="img/logos/samsung.webp" alt="School 2" class="schoolLogo">
-    <img src="img/logos/IBM.png" alt="School 2" class="schoolLogo">
-    <img src="img/logos/google.png" alt="School 2" class="schoolLogo">
-    <img src="img/logos/Salesforce.png" alt="School 2" class="schoolLogo">
   </div>
+  </div>
+  <div id="supportContainer">
+    <h1 class="supportTitle">TrustLLM Team</h1>
+    <br>
+
+    <div id="logoContainer">
+      <img src="img/logos/Lehigh-University-logo.png" alt="School 1" class="schoolLogo">
+      <img src="img/logos/W&M.png" alt="School 3" class="schoolLogo">
+      <img src="img/logos/stanford.png" alt="School 3" class="schoolLogo">
+      <img src="img/logos/UCLA.jpeg" alt="School 3" class="schoolLogo">
+      <img src="img/logos/CMU.png" alt="School 3" class="schoolLogo">
+      <img src="img/logos/UIUC.png" alt="School 3" class="schoolLogo">
+      <img src="img/logos/TAMU.png" alt="School 3" class="schoolLogo">
+      <img src="img/logos/ND.png" alt="School 2" class="schoolLogo">
+      <img src="img/logos/duke.png" alt="School 2" class="schoolLogo">
+      <img src="img/logos/UMD.png" alt="School 2" class="schoolLogo">
+      <img src="img/logos/JHU.jpeg" alt="School 2" class="schoolLogo">
+      <img src="img/logos/UIC.png" alt="School 2" class="schoolLogo">
+      <img src="img/logos/UGA.png" alt="School 2" class="schoolLogo">
+      <img src="img/logos/MSU.png" alt="School 2" class="schoolLogo">
+      <img src="img/logos/UWM.png" alt="School 2" class="schoolLogo">
+      <img src="img/logos/UCSB.png" alt="School 2" class="schoolLogo">
+      <img src="img/logos/uconn.png" alt="School 2" class="schoolLogo">
+      <img src="img/logos/vt.png" alt="School 2" class="schoolLogo">
+      <img src="img/logos/IIT.gif" alt="School 2" class="schoolLogo">
+      <img src="img/logos/USC.png" alt="School 2" class="schoolLogo">
+      <img src="img/logos/CISPA.png" alt="School 2" class="schoolLogo">
+      <img src="img/logos/MGH.png" alt="School 2" class="schoolLogo">
+
+      <img src="img/logos/Microsoft.png" alt="School 3" class="schoolLogo">
+      <img src="img/logos/samsung.webp" alt="School 2" class="schoolLogo">
+      <img src="img/logos/IBM.png" alt="School 2" class="schoolLogo">
+      <img src="img/logos/google.png" alt="School 2" class="schoolLogo">
+      <img src="img/logos/Salesforce.png" alt="School 2" class="schoolLogo">
+    </div>
 
 
-</div>
-    <div class="footer-container"></div>
+  </div>
+  <div class="footer-container"></div>
   </div>
 </body>
 
 </html>
-
