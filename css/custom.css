@@ -183,7 +183,11 @@ body {
   font-size: 14px;
 }
 
-
+.feature h2{
+  color: rgb(21, 74, 172);
+  line-height: 30px;
+  text-align: center;
+}
 .publication {
   width: 100%; /* Set the table width to fill the container */
   border-collapse: collapse; /* Optional: removes the space between borders */

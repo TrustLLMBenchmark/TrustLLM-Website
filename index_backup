@@ -1804,7 +1804,24 @@ circumstances.</p>
               known as artificial intelligent agents.</p>
           </div>
         </div>
+       
+        <!-- Machine Ethics -->
+        <div class="card">
+          <div class="pic">
+            <img src="img/logos/ethics.png" alt="Machine Ethics">
+          </div>
+          <div class="textcard">
+            <h2>Machine Ethics</h2>
+            <p>Machine ethics ensure the moral behaviors of man-made machines that use artificial intelligence, otherwise known as artificial intelligent agents. In our experiments, we have found that:</p>
+            <ol>
+              <li>LLMs have already formed a particular set of moral values, but there is still a significant gap in aligning completely with human ethics. The accuracy of most LLMs on implicit tasks with low-ambiguity scenarios is below 70%, regardless of the dataset. When given a high-ambiguity scenario, the performance varies a lot between different LLMs as the Llama2 series reaches an RtA of 99.9%, and some are less than 70%.</li>
+              <li>Regarding emotional awareness, LLMs demonstrate higher accuracy, with the best-performing LLMs being GPT-4, which exceeds an accuracy rate of 94%.</li>
+            </ol>
+          </div>
+        </div>
 
+
+     
 
       </div>
     </div>
