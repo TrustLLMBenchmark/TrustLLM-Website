@@ -373,45 +373,52 @@
               <p class="text text-center graph-title">
                 This is the title for the bottom very long scrollable table
               </p>
+
               <div class="custom-table-container center add-top-margin-small">
                 <table class="custom-table">
                   <caption>Datasets and metrics in TrustLLM. ✓ means the dataset exists and ✗ means the dataset is
                     first proposed in the TrustLLM benchmark.</caption>
                   <thead>
-                    <tr class="bg-color-blue">
-                      <th>Dataset</th>
-                      <th>Description</th>
-                      <th>Num.</th>
-                      <th>Exist</th>
-                      <th>Section</th>
-                    </tr>
-                  </thead>
-                  <tbody>
+                                <tr class="bg-color-blue">
+                <th>Dataset</th>
+                <th>Description</th>
+                <th>Num.</th>
+                <th>Exist?</th>
+                <th>Section</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Previous rows -->
+            <tr>
+                <td class="text-left">SQuAD2.0</td>
+                <td class="text-left">It combines questions in SQuAD1.1 with over 50,000 unanswerable questions.</td>
+                <td>100</td>
+                <td>✓</td>
+                <td>Misinformation</td>
+            </tr>
+            <tr class="bg-color-light-blue">
+                <td class="text-left">CODAH</td>
+                <td class="text-left">It contains 28,000 commonsense questions.</td>
+                <td>100</td>
+                <td>✓</td>
+                <td>Misinformation</td>
+            </tr>
+            <!-- Next rows -->
+            <tr>
+                <td class="text-left">HotpotQA</td>
+                <td class="text-left">It contains 113k Wikipedia-based question-answer pairs for complex multi-hop reasoning.</td>
+                <td>100</td>
+                <td>✓</td>
+                <td>Misinformation</td>
+            </tr>
+            <tr class="bg-color-light-blue">
+                <td class="text-left">AdversarialQA</td>
+                <td class="text-left">It contains 30,000 adversarial reading comprehension question-answer pairs.</td>
+                <td>100</td>
+                <td>✓</td>
+                <td>Misinformation</td>
+            </tr>
 
-                    <!-- ...previous rows... -->
-                    <tr>
-                      <td class="text-left">SQuAD2.0</td>
-                      <td class="text-left">It combines questions in SQuAD1.1 with over 50,000 unanswerable questions.
-                      </td>
-                      <td>100</td>
-                      <td>✓</td>
-                      <td>Misinformation</td>
-                    </tr>
-                    <tr class="bg-color-light-blue">
-                      <td class="text-left">CODAH</td>
-                      <td class="text-left">It contains 28,000 commonsense questions.</td>
-                      <td>100</td>
-                      <td>✓</td>
-                      <td>Misinformation</td>
-                    </tr>
-                    <tr>
-                      <td class="text-left">HotpotQA</td>
-                      <td class="text-left">It contains 113k Wikipedia-based question-answer pairs for complex
-                        multi-hop reasoning.</td>
-                      <td>100</td>
-                      <td>✓</td>
-                      <td>Misinformation</td>
-                    </tr>
                     <tr class="bg-color-light-blue">
                       <td class="text-left">AdversarialQA</td>
                       <td class="text-left">It contains 30,000 adversarial reading comprehension question-answer
