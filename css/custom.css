@@ -202,7 +202,7 @@ body {
   flex: 0 0 calc(50% - 20px); /* 减去的20px代表两个项目之间总共的间距 */
   margin: 1px; /* 为了使项目之间有间距，并在容器的宽度中居中显示 */
   box-sizing: border-box; /* 确保内边距和边框包含在宽度计算内 */
-  padding: 20px; /* 项目内的填充 */
+  padding: 25px; /* 项目内的填充 */
   border-radius: 10px; /* 边角的圆角半径 */
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* 阴影效果 */
   background-color: #fff; /* 背景颜色 */
@@ -231,7 +231,7 @@ body {
   width: 100%; /* 确保占满整个容器宽度 */
   color: white; /* 文本颜色设置为白色 */
   margin: 0 ; /* 移除默认的外边距 */
-
+  font-size: 22px;
   padding: 0;
   line-height: 3.0;
 }
@@ -301,4 +301,14 @@ body {
 
 .custom-table tr.bg-color-blue {
   background-color: rgb(198, 214, 244);
+}
+
+
+.text {
+  font-size: 18px;
+  margin: 10px 0 10px 0;
+  padding: 0;
+}
+.text-li {
+  font-size: 18px;
 }

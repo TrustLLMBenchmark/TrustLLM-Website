@@ -145,7 +145,16 @@
         <br>
 
         <h2 class="supportTitle2">Overall Perspective</h2>
-        <br>
+
+
+        <ul class="text-li">
+          <li>Trustworthiness is closely related to utility.</li>
+          <li>Most LLMs are not really aligned.</li>
+          <li>There is a performance gap of trustworthiness between proprietary LLMs and open-source LLMs.</li>
+          <li>Both the model itself and trustworthiness-related technology should be transparent (e.g., open-source).
+          </li>
+        </ul>
+
 
 
         <h2 class="supportTitle2">Section Perspective</h2>
@@ -159,7 +168,7 @@
             <div class="featurecard">
               <h2>Truthfulness</h2>
 
-          </div>
+            </div>
             <div class="description">
               <p>Truthfulness means the accurate representation of information, facts, and results by an AI system. We
                 have found that:</p>
@@ -186,8 +195,8 @@
 
             <input type="checkbox" id="toggle#2" class="toggle">
 
-              <div class="featurecard">
-                <h2>Safety</h2>
+            <div class="featurecard">
+              <h2>Safety</h2>
 
             </div>
             <div class="description">
@@ -214,8 +223,8 @@
             <div class="featurecard">
               <h2>Fairness</h2>
 
-          </div>
-            
+            </div>
+
             <div class="description">
               <p>Fairness is the quality or state of being fair, especially fair or impartial treatment. In our
                 experiments, we have found that:</p>
@@ -240,7 +249,7 @@
             <div class="featurecard">
               <h2>Robustness</h2>
 
-          </div>
+            </div>
             <div class="description">
               <p>Robustness is the ability of a system to maintain its level of performance under a variety of
                 circumstances. In our experiments, we have found that:</p>
@@ -264,7 +273,7 @@
             <div class="featurecard">
               <h2>Privacy</h2>
 
-          </div>
+            </div>
             <div class="description">
               <p>Privacy is the norms and practices that help to safeguard human autonomy, identity, and dignity. In our
                 experiments, we have found that:</p>
@@ -286,7 +295,7 @@
             <div class="featurecard">
               <h2>Machine Ethics</h2>
 
-          </div>
+            </div>
             <div class="description">
               <p>Machine ethics ensure the moral behaviors of man-made machines that use artificial intelligence,
                 otherwise known as artificial intelligent agents. In our experiments, we have found that:</p>
@@ -382,45 +391,48 @@
                   <caption>Datasets and metrics in TrustLLM. ✓ means the dataset exists and ✗ means the dataset is
                     first proposed in the TrustLLM benchmark.</caption>
                   <thead>
-                                <tr class="bg-color-blue">
-                <th>Dataset</th>
-                <th>Description</th>
-                <th>Num.</th>
-                <th>Exist?</th>
-                <th>Section</th>
-            </tr>
-        </thead>
-        <tbody>
-            <!-- Previous rows -->
-            <tr>
-                <td class="text-left">SQuAD2.0</td>
-                <td class="text-left">It combines questions in SQuAD1.1 with over 50,000 unanswerable questions.</td>
-                <td>100</td>
-                <td>✓</td>
-                <td>Misinformation</td>
-            </tr>
-            <tr class="bg-color-light-blue">
-                <td class="text-left">CODAH</td>
-                <td class="text-left">It contains 28,000 commonsense questions.</td>
-                <td>100</td>
-                <td>✓</td>
-                <td>Misinformation</td>
-            </tr>
-            <!-- Next rows -->
-            <tr>
-                <td class="text-left">HotpotQA</td>
-                <td class="text-left">It contains 113k Wikipedia-based question-answer pairs for complex multi-hop reasoning.</td>
-                <td>100</td>
-                <td>✓</td>
-                <td>Misinformation</td>
-            </tr>
-            <tr class="bg-color-light-blue">
-                <td class="text-left">AdversarialQA</td>
-                <td class="text-left">It contains 30,000 adversarial reading comprehension question-answer pairs.</td>
-                <td>100</td>
-                <td>✓</td>
-                <td>Misinformation</td>
-            </tr>
+                    <tr class="bg-color-blue">
+                      <th>Dataset</th>
+                      <th>Description</th>
+                      <th>Num.</th>
+                      <th>Exist?</th>
+                      <th>Section</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <!-- Previous rows -->
+                    <tr>
+                      <td class="text-left">SQuAD2.0</td>
+                      <td class="text-left">It combines questions in SQuAD1.1 with over 50,000 unanswerable questions.
+                      </td>
+                      <td>100</td>
+                      <td>✓</td>
+                      <td>Misinformation</td>
+                    </tr>
+                    <tr class="bg-color-light-blue">
+                      <td class="text-left">CODAH</td>
+                      <td class="text-left">It contains 28,000 commonsense questions.</td>
+                      <td>100</td>
+                      <td>✓</td>
+                      <td>Misinformation</td>
+                    </tr>
+                    <!-- Next rows -->
+                    <tr>
+                      <td class="text-left">HotpotQA</td>
+                      <td class="text-left">It contains 113k Wikipedia-based question-answer pairs for complex multi-hop
+                        reasoning.</td>
+                      <td>100</td>
+                      <td>✓</td>
+                      <td>Misinformation</td>
+                    </tr>
+                    <tr class="bg-color-light-blue">
+                      <td class="text-left">AdversarialQA</td>
+                      <td class="text-left">It contains 30,000 adversarial reading comprehension question-answer pairs.
+                      </td>
+                      <td>100</td>
+                      <td>✓</td>
+                      <td>Misinformation</td>
+                    </tr>
 
                     <tr class="bg-color-light-blue">
                       <td class="text-left">AdversarialQA</td>
@@ -913,7 +925,7 @@
         </div>
       </div>
       <h1 class="supportTitle">Citation</h1>
-        <br>
+      <br>
       <pre class="bibtax">@
         title={TrsLM s},
         author={
