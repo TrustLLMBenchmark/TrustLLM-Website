@@ -918,7 +918,7 @@ ol.nested>li:before {
   border-collapse: collapse;
   border-spacing: 0;
   empty-cells: show;
-  margin: 1px;
+  margin: 3px;
   padding: 0;
 }
 

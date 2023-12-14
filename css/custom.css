@@ -188,18 +188,34 @@ body {
   padding: 20px; /* Padding around the entire features container */
 }
 
-.feature {
 
+
+.feature {
   margin-bottom: 20px; /* Space between rows of features */
   /* Additional styles for the feature boxes */
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   border-radius: 8px;
   overflow: hidden;
+  flex: 0 0 calc(50% - 20px); /* 减去的20px代表两个项目之间总共的间距 */
+  margin: 1px; /* 为了使项目之间有间距，并在容器的宽度中居中显示 */
+  box-sizing: border-box; /* 确保内边距和边框包含在宽度计算内 */
+  padding: 25px; /* 项目内的填充 */
+  border-radius: 10px; /* 边角的圆角半径 */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* 阴影效果 */
+  background-color: #fff; /* 背景颜色 */
+  border: 1px solid #e6e6e6; /* 边框 */
+  text-align: center; /* 文本居中对齐 */
+  cursor: pointer; /* 如果你希望整个卡片可点击 */
+  transition: box-shadow 0.3s ease, max-height 0.7s ease; /* 过渡效果 */
 }
 
-
-.feature {
-  flex: 0 0 calc(50% - 20px); /* 减去的20px代表两个项目之间总共的间距 */
+.feature_1x1 {
+  margin-bottom: 20px; /* Space between rows of features */
+  /* Additional styles for the feature boxes */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  flex: 0 0 calc(95% - 20px); /* 减去的20px代表两个项目之间总共的间距 */
   margin: 1px; /* 为了使项目之间有间距，并在容器的宽度中居中显示 */
   box-sizing: border-box; /* 确保内边距和边框包含在宽度计算内 */
   padding: 25px; /* 项目内的填充 */
@@ -248,6 +264,27 @@ body {
   margin-top: 20px;
 }
 
+.feature:hover .description {
+  max-height: 2000px; /* Adjust as needed */
+  padding: 20px;
+}
+
+.feature_1x1:hover {
+  box-shadow: 0 8px 16px -2px rgba(0, 0, 0, 0.5);
+}
+
+.feature_1x1 img {
+  max-width: 100px; /* Adjust as needed */
+  height: auto;
+  margin-top: 20px;
+}
+
+.feature_1x1:hover .description {
+  max-height: 2000px; /* Adjust as needed */
+  padding: 20px;
+}
+
+
 .toggle {
   display: none;
 }
@@ -278,20 +315,17 @@ body {
   background-color: #fff;
   padding: 0 20px;
   text-align: left;
-  font-size: 16px; /* This is an example, set the font size you prefer */
+  font-size: 20px; /* This is an example, set the font size you prefer */
 }
 
 /* Additional styles to ensure consistency in font size */
 .description p,
 .description li {
   text-align: left;
-  font-size: 16px; /* This should match the font-size defined for .description */
+  font-size: 20px; /* This should match the font-size defined for .description */
 }
 
-.feature:hover .description {
-  max-height: 2000px; /* Adjust as needed */
-  padding: 20px;
-}
+
 
 
 .custom-table tr.bg-color-light-blue {
