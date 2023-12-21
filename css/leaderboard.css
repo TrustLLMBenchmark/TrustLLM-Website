@@ -1,28 +1,30 @@
 .table-container {
-    max-width: 1000px; /* Adjust the width as needed */
+    max-width: 80%; /* Adjust the width as needed */
     margin-left: auto;
     margin-right: auto;
     padding: 20px; /* Optional: for internal spacing */
   }
   
 table {
+    width: 100%; 
     border: 1px solid black;
     border-collapse: collapse;
 }
 
-th {
-    padding: 2px 5px;
-    border: 1px solid black;
-}
-
-td {
-    padding: 2px 5px;
-    border: 1px solid black;
+th, td {
+    font-family: 'Arial', 'Helvetica', sans-serif;
+    font-size: 16px;
+    padding: 5px; 
+    border: 1px solid #c6d6f4;
+    text-align: center;
 }
 
 thead {
-    background: #ddd;
+    background-color: #3b6baf; /* Dark blue header */
+    color: #ffffff;
 }
+
+
 
 table#results.js-sort-0 tbody tr td:nth-child(1),
 table#results.js-sort-1 tbody tr td:nth-child(2),
