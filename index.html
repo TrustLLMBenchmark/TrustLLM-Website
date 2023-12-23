@@ -161,24 +161,24 @@
           <div class="feature_1x1">
               <div class="featurecard"><h2>LLMs' Alignment Shortfall</h2></div>
               <div class="description">
-          <p><i>Trustworthiness is closely related to utility.</i> We have observed a close relationship between trustworthiness and utility, and they often have a positive relation in specific tasks. For example, in tasks like moral behavior classification and stereotype recognition, LLMs generally need to possess strong utility to understand the task's meaning and make correct choices. Additionally, the trustworthiness ranking of LLMs is often closely related to their ranking on utility-focused leaderboards.</p>
+          <p><i>
+            We have found that many LLMs exhibit a certain degree of over-alignment (i.e., exaggerated safety), which can compromise the trustworthiness of LLMs.</i>  LLMs may identify many innocuous prompt contents as harmful, impacting their utility. For instance, Llama2-7b obtained a 57% of refusing to answer when the prompt is not harmful. Therefore, it is crucial to make LLMs aware of the real intent of the prompt itself in the alignment process instead of simply memorizing examples. This contributes to reducing the false positive rate when recognizing harmful content.
+          </p>
               </div>
           </div>
   
           <!-- Performance Gap in Trustworthiness -->
           <div class="feature_1x1">
-            <div class="featurecard">
-              <h2>Trust Disparity: Closed vs. Open LLMs</h2>
-          </div>
-              <div class="description">
+            <div class="featurecard"><h2>Trust Disparity: Closed vs. Open LLMs</h2></div>
+            <div class="description">
                 <p><i>There is a performance gap of trustworthiness between proprietary LLMs and open-source LLMs.</i> A significant performance gap exists between open-source and proprietary LLMs in terms of trustworthiness. Proprietary LLMs tend to outperform open-source models, which raises concerns since open-source models are widely accessible. Surprisingly, some open-source LLMs like Llama2 show high trustworthiness, challenging this trend.</p>
-              </div>
+            </div>
           </div>
   
 
           <!-- Transparency in Trustworthiness -->
           <div class="feature_1x1">
-            <input type="checkbox" id="toggle" class="toggle">
+
             <div class="featurecard">
               <h2>Imperative for Transparency in Trustworthy AI Technology</h2>
           </div>
