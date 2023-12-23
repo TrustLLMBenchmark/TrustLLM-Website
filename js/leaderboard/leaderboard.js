@@ -70,6 +70,7 @@ document.addEventListener('DOMContentLoaded', () => {
     generateTable(safety, "table_safety");
     generateTable(ethics, "table_ethics");
     generateTable(truthfulness, "table_truthfulness");
+    generateTable(fairness, "table_fairness");
 
 
     
