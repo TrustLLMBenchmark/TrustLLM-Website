@@ -327,9 +327,27 @@ body {
 
 
 
+/* Default background for all rows */
+.custom-table tr {
+  background-color: white; /* Default color for all rows */
+}
+
+.custom-table th {
+  background-color: rgb(198, 214, 244);
+}
+
+
+/* Alternate background for even rows */
+.custom-table tr:nth-child(even) {
+  background-color: #eef3f8;
+}
+}
+
+
+
 
 .custom-table tr.bg-color-light-blue {
-  background-color: #eef3f8;/* Light blue color in the same hue as the gray tones */
+  background-color: #eef3f8;
 }
 
 
@@ -345,4 +363,60 @@ body {
 }
 .text-li {
   font-size: 18px;
+}
+
+
+.menu-index {
+  color: rgb(255, 255, 255) !important;
+  opacity: 1 !important;
+  font-weight: 700 !important;
+}
+
+.container {
+  text-align: center;
+  /* 让所有内容居中对齐 */
+  height: 30vh;
+  /* 使容器填满整个视口高度 */
+  display: flex;
+  flex-direction: column;
+  /* 使子元素垂直排列 */
+  justify-content: center;
+  /* 垂直居中对齐 */
+  align-items: center;
+  /* 水平居中对齐 */
+  border: none;
+  /* 移除边框 */
+  box-shadow: none;
+  /* 移除阴影 */
+}
+
+.banner {
+  width: 100%;
+  text-align: center;
+  /* 使标语居中对齐 */
+}
+
+.banner h3 {
+  font-size: 1.5em;
+  /* 调整标语的字体大小 */
+}
+
+.center-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* 使容器充满视口高度，可根据需要调整 */
+}
+
+.arch {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.center-container img {
+  max-width: 100%;
+  /* 确保图片不超出容器宽度 */
+  max-height: 100%;
+  /* 确保图片不超出容器高度 */
 }

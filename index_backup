@@ -187,6 +187,7 @@
           </div>
 
 
+          We have found that many LLMs exhibit a certain degree of over-alignment (i.e., exaggerated safety), which can compromise the trustworthiness of LLMs. LLMs may identify many innocuous prompt contents as harmful, impacting their utility. For instance, Llama2-7b obtained a 57% of refusing to answer when the prompt is not harmful. Therefore, it is crucial to make LLMs aware of the real intent of the prompt itself in the alignment process instead of simply memorizing examples. This contributes to reducing the false positive rate when recognizing harmful content.
         
 
           <div class="flex-row">
