@@ -4,10 +4,13 @@ let formatNumber = (value) => {
     }
     return value;
 };
-
 let generateTable = (data, tableId) => {
     let table = document.getElementById(tableId);
+    table.classList.add("min-w-full", "text-center", "text-sm", "font-light"); // Tailwind classes for table
+
     let thead = table.createTHead();
+    thead.classList.add("border-b","text-center", "font-medium", "dark:border-neutral-500"); // Tailwind classes for thead
+
     let tbody = table.createTBody();
     let headerRow = thead.insertRow();
     let sortedColumnIndex = null;
@@ -16,11 +19,11 @@ let generateTable = (data, tableId) => {
     if (data.length > 0) {
         Object.keys(data[0]).forEach((key, columnIndex) => {
             let th = document.createElement("th");
-            th.classList.add("custom-th"); // Add custom class for styling
+            th.classList.add("px-6", "py-4"); // Tailwind classes for th
 
             // Create flex container div
             let div = document.createElement("div");
-            div.classList.add("flex-container");
+            div.classList.add("flex", "items-center", "justify-center"); // Tailwind classes for flex container
 
             // Create span for text
             let span = document.createElement("span");
@@ -49,11 +52,12 @@ let generateTable = (data, tableId) => {
     }
 
     // Populate the table body data
-    // Populate the table body data
     data.forEach(item => {
         let row = tbody.insertRow();
+        row.classList.add("border-b", "transition", "duration-300", "ease-in-out", "hover:bg-neutral-100", "dark:border-neutral-500", "dark:hover:bg-neutral-600"); // Tailwind classes for tr
         Object.values(item).forEach(text => {
             let cell = row.insertCell();
+            cell.classList.add("whitespace-nowrap", "px-6", "py-4"); // Tailwind classes for td
             cell.textContent = formatNumber(text); // Format numbers
         });
     });

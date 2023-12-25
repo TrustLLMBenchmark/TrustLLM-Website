@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leaderboard | TrustLLM-Benchmark</title>
+    <link rel="icon" href="img/logo_only.png" type="image/icon type">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/leaderboard.css">
+
+    <link href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" media="screen" rel="stylesheet"
+        type="text/css" />
+
+
+    <link href="css/frame.css" media="screen" rel="stylesheet" type="text/css" />
+    <link href="css/controls.css" media="screen" rel="stylesheet" type="text/css" />
+    <link href="css/custom.css" media="screen" rel="stylesheet" type="text/css" />
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/footer.js"></script>
+
+    <script type="text/javascript" src="js/leaderboard/sort-table.js" defer></script>
+    <script type="text/javascript" src="js/leaderboard/leaderboard-data.js" defer></script>
+    <script type="text/javascript" src="js/leaderboard/leaderboard.js" defer></script>
+
+
+</head>
+
+<body>
+
+    <!-- <div id="nav">
+        <div id="icon">
+            <img src="img/logo.png" id="nav-icon">
+            <a class="nav-button" href="index.html"
+                style="margin-left: 2px; font-size: 24px">ScienceQA
+            </a>
+        </div>
+        <div>
+            <a class="nav-button" href="index.html#home">Home</a>
+            <a class="nav-button" href="index.html#dataset">Dataset</a>
+            <a class="nav-button" href="index.html#download">Download</a>
+            <a class="nav-button" href="index.html#method">Method</a>
+            <a class="nav-button" href="index.html#paper">Paper</a>
+            <a class="nav-button" href="index.html#code">Code</a>
+            <a class="nav-button" href="index.html#citation">Citation</a>
+            <a class="nav-button" href="index.html#authors">Authors</a>
+            <a class="nav-button" href="index.html#contact">Contact</a>
+            <a class="nav-button" href="leaderboard.html">Leaderboard</a>
+            <a class="nav-button" href="explore.html">Explore</a>
+            <a class="nav-button" href="visualize.html">Visualize</a>
+        </div>
+    </div> -->
+
+    <div id="body">
+
+        <div class="menu-container"></div>
+
+
+        <!--            <p>-->
+        <!--                &#128512 You are welcome to contribute your results to the ScienceQA test split! Please fill in this-->
+        <!--                <a href="https://forms.gle/iwEMepqowMkknNvb8" class="ext-link">Google Form-->
+        <!--                </a> to submit your results.-->
+        <!--            </p>-->
+        <!-- TW Elements is free under AGPL, with commercial license required for specific uses. 
+     See more details: https://tw-elements.com/license/ 
+     and contact us for queries at tailwind@mdbootstrap.com -->
+      
+
+        <div class="table-container">
+            <div class="section">
+                <h1 class="text-3xl"  >Leaderboard - TrustLLM</h1>
+
+
+                <div class="table-container">
+                    <div class="section">
+
+
+                        <h2 class="text-2xl font-semibold leading-tight text-gray-800 my-4">Robustness</h2>
+                        <div class="flex flex-col">
+                            <div class="overflow-x-auto sm:-mx-6 lg:-mx-8">
+                                <div class="inline-block min-w-full py-2 sm:px-6 lg:px-8">
+                                    <div class="overflow-hidden">
+                                        <table class="js-sort-table" id="table_robustness"></table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+                        <h2 class="text-2xl font-semibold leading-tight text-gray-800 my-4">Privacy</h2>
+                        <div class="flex flex-col"> <!-- 新增的包裹层 -->
+                            <div class="overflow-x-auto sm:-mx-6 lg:-mx-8">
+                                <div class="inline-block min-w-full py-2 sm:px-6 lg:px-8">
+                                    <div class="overflow-hidden">
+                                        <table class="js-sort-table" id="table_privacy"></table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+                        <h2 class="text-2xl font-semibold leading-tight text-gray-800 my-4">Safety</h2>
+                        <div class="flex flex-col"> <!-- 新增的包裹层 -->
+                            <div class="overflow-x-auto sm:-mx-6 lg:-mx-8">
+                                <div class="inline-block min-w-full py-2 sm:px-6 lg:px-8">
+                                    <div class="overflow-hidden">
+                                        <table class="js-sort-table" id="table_safety"></table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+                        <h2 class="text-2xl font-semibold leading-tight text-gray-800 my-4">Ethics</h2>
+                        <div class="flex flex-col"> <!-- 新增的包裹层 -->
+                            <div class="overflow-x-auto sm:-mx-6 lg:-mx-8">
+                                <div class="inline-block min-w-full py-2 sm:px-6 lg:px-8">
+                                    <div class="overflow-hidden">
+                                        <table class="js-sort-table" id="table_ethics"></table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+                        <h2 class="text-2xl font-semibold leading-tight text-gray-800 my-4">Truthfulness</h2>
+                        <div class="flex flex-col"> <!-- 新增的包裹层 -->
+                            <div class="overflow-x-auto sm:-mx-6 lg:-mx-8">
+                                <div class="inline-block min-w-full py-2 sm:px-6 lg:px-8">
+                                    <div class="overflow-hidden">
+                                        <table class="js-sort-table" id="table_truthfulness"></table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+                        <h2 class="text-2xl font-semibold leading-tight text-gray-800 my-4">Fairness</h2>
+                        <div class="flex flex-col"> <!-- 新增的包裹层 -->
+                            <div class="overflow-x-auto sm:-mx-6 lg:-mx-8">
+                                <div class="inline-block min-w-full py-2 sm:px-6 lg:px-8">
+                                    <div class="overflow-hidden">
+                                        <table class="js-sort-table" id="table_fairness"></table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+</body>
+
+</html>
+
+
+
+<!-- https://www.cssscript.com/sort-table-header-column/ -->
+<!-- <table class="js-sort-table" id="">
+    <thead>
+        <tr>
+            <td class="js-sort-number"><strong>#</strong></td>
+            <td class="js-sort-number"><strong>Model</strong></td>
+            <td class="js-sort-number"><strong>Stereotype Overall</strong></td>
+            <td class="js-sort-number"><strong>Stereotype Overall Rank</strong></td>
+            <td class="js-sort-number"><strong>Overall Agreement Rate</strong></td>
+            <td class="js-sort-number"><strong>Overall Agreement Rate Rank</strong></td>
+            <td class="js-sort-number"><strong>Sex</strong></td>
+            <td class="js-sort-number"><strong>Sex Rank</strong></td>
+            <td class="js-sort-number"><strong>Race</strong></td>
+            <td class="js-sort-number"><strong>Race Rank</strong></td>
+            <td class="js-sort-number"><strong>Refuse Overall</strong></td>
+            <td class="js-sort-number"><strong>Refuse Overall Rank</strong></td>
+        </tr>
+    </thead>
+    <tbody>
+    </tbody>
+</table> -->
+
+<!-- <table class="js-sort-table"  id="table_fairness"></table>  -->

@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 :root {
     --nav-font: Arial, Helvetica, sans-serif;
     --nav-height: 0px;
@@ -22,7 +26,7 @@
   
 table {
     width: 100%; 
-    background-color: #fafafa;
+
     border: 1px solid black;
     border-collapse: collapse;
 }
@@ -102,13 +106,13 @@ table#results.js-sort-13 tbody tr td:nth-child(14) {
     user-select: none;
 }
 
-th, td {
+/* th, td {
     font-family: 'Arial', 'Helvetica', sans-serif;
     font-size: 16px;
     padding: 8px; 
     border: 1px solid #c6d6f4;
     text-align: center;
-}
+} */
 
 
 
@@ -130,11 +134,6 @@ th, td {
 }
 
 
-
-/* Add shadow to the sorted column */
-.js-sort-active{
-    background-color: var(--th-hl);
-}
 
 /* Modify the ::after and ::before styles based on sorting direction */
 
