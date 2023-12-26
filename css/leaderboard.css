@@ -1,28 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --nav-font: Arial, Helvetica, sans-serif;
+    --nav-height: 0px;
+
+    --body-font: #212529;
+    --heading: #1859c2;
+    --nav-darkblue: #05004a;
+    --nav-color: #212529;
+    --nav-color-light: #353c42;
+    --nav-darkblue: #05004a;
+    --th-hl: rgb(21, 74, 172);
+    --th: #1859c2;
+  }
+
 .table-container {
-    max-width: 1000px; /* Adjust the width as needed */
+
+    max-width: 80%; /* Adjust the width as needed */
     margin-left: auto;
     margin-right: auto;
     padding: 20px; /* Optional: for internal spacing */
   }
   
 table {
+    width: 100%; 
+
     border: 1px solid black;
     border-collapse: collapse;
 }
 
-th {
-    padding: 2px 5px;
-    border: 1px solid black;
-}
 
-td {
-    padding: 2px 5px;
-    border: 1px solid black;
-}
 
-thead {
-    background: #ddd;
-}
+
 
 table#results.js-sort-0 tbody tr td:nth-child(1),
 table#results.js-sort-1 tbody tr td:nth-child(2),
@@ -83,3 +94,47 @@ table#results.js-sort-13 tbody tr td:nth-child(14) {
     text-decoration: underline;
     cursor: pointer;
 }
+
+
+.custom-th {
+    text-align: center;
+    padding: 8px;
+    background-color: var(--th);
+
+    color: #ffffff;
+    cursor: pointer;
+    user-select: none;
+}
+
+/* th, td {
+    font-family: 'Arial', 'Helvetica', sans-serif;
+    font-size: 16px;
+    padding: 8px; 
+    border: 1px solid #c6d6f4;
+    text-align: center;
+} */
+
+
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sort-icon {
+    display: inline-block;
+    margin-left: 5px;
+}
+
+.sort-icon::before, .sort-icon::after {
+    content: '';
+    display: block;
+    border: 4px solid transparent;
+}
+
+
+
+/* Modify the ::after and ::before styles based on sorting direction */
+
+
