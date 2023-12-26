@@ -17,7 +17,7 @@
 }
 
 .title-icon2 {
-    width: 80%; /* logo宽度设置为100%，使其尽可能大 */
+    width: 70%; /* logo宽度设置为100%，使其尽可能大 */
     height: auto; /* 保持图片高度自适应 */
     margin-bottom: 20px; /* 在logo和标语之间增加一些间隔 */
 }
