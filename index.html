@@ -6,10 +6,11 @@
   <link rel="icon" href="img/logo_only.png" type="image/icon type">
   <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" media="screen" rel="stylesheet" type="text/css" />
+  <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+  <link href="/dist/output.css" rel="stylesheet">
   <link href="css/frame.css" media="screen" rel="stylesheet" type="text/css" />
   <link href="css/controls.css" media="screen" rel="stylesheet" type="text/css" />
   <link href="css/custom.css" media="screen" rel="stylesheet" type="text/css" />
-
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet">
@@ -17,7 +18,7 @@
   <script src="js/menu.js"></script>
   <script src="js/footer.js"></script>
   <script src="js/index.js"></script>
-  <script src="https://cdn.tailwindcss.com"></script>
+
   <style>
 
   </style>
@@ -339,181 +340,11 @@
         <div class="content-table flex-column">
           <h2 class="supportTitle2">LLM Benchmark Details</h2>
           <br>
-          
-          <table class="hover:table-fixed">
-            <thead>
-              <tr>
-                <th>Model</th>
-                <th>Model Size</th>
-                <th>Open-Weight</th>
-                <th>Version</th>
-                <th>Creator</th>
-                <th>Source</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr class="bg-color-light-blue">
-                <td data-title="Model">GPT-3.5-turbo (ChatGPT)</td>
-                <td data-title="Model Size">unknown</td>
-                <td data-title="Open-Weight"><span class="bg-yellow-100 text-yellow-700 font-bold py-1 px-3 rounded-full">
-                  No
-                </span>
-                <td data-title="Version">-</td>
-                <td data-title="Creator">OpenAI</td>
-                <td data-title="Source">OpenAI API</td>
-              </tr>
-              <tr>
-                <td data-title="Model">GPT-4</td>
-                <td data-title="Model Size">unknown</td>
-                <td data-title="Open-Weight"><span class="bg-yellow-100 text-yellow-700 font-bold py-1 px-3 rounded-full">
-                  No
-                </span>
-                <td data-title="Version">-</td>
-                <td data-title="Creator">OpenAI</td>
-                <td data-title="Source">OpenAI API</td>
-              </tr>
-              <tr>
-                <td data-title="Model">ERNIE-3.5-turbo</td>
-                <td data-title="Model Size">unknown</td>
-                <td data-title="Open-Weight"><span class="bg-yellow-100 text-yellow-700 font-bold py-1 px-3 rounded-full">
-                  No
-                </span>
-                </td>
-                <td data-title="Version">-</td>
-                <td data-title="Creator">Baidu Inc.</td>
-                <td data-title="Source">ERNIE API</td>
-              </tr>
-              <tr>
-                <td data-title="Model">text-bison-001 (PaLM 2)</td>
-                <td data-title="Model Size">unknown</td>
-                <td data-title="Open-Weight"><span class="bg-yellow-100 text-yellow-700 font-bold py-1 px-3 rounded-full">
-                  No
-                </span>
-                <td data-title="Version">-</td>
-                <td data-title="Creator">Google</td>
-                <td data-title="Source">Google API</td>
-              </tr>
-              <tr>
-                <td data-title="Model">Llama2-7b</td>
-                <td data-title="Model Size">7b</td>
-                <td data-title="Open-Weight"><span class="bg-green-100 text-green-700 font-bold py-1 px-3 rounded-full">
-                  Yes
-                </span>
-                <td data-title="Version">-</td>
-                <td data-title="Creator">Meta</td>
-                <td data-title="Source">HuggingFace</td>
-              </tr>
-              <tr>
-                <td data-title="Model">Llama2-13b</td>
-                <td data-title="Model Size">13b</td>
-                                    <td data-title="Open-Weight"><span class="bg-green-100 text-green-700 font-bold py-1 px-3 rounded-full">
-                  Yes
-                </span>
-                <td data-title="Version">-</td>
-                <td data-title="Creator">Meta</td>
-                <td data-title="Source">HuggingFace</td>
-              </tr>
-              <tr>
-                <td data-title="Model">Llama2-70b</td>
-                <td data-title="Model Size">70b</td>
-                                    <td data-title="Open-Weight"><span class="bg-green-100 text-green-700 font-bold py-1 px-3 rounded-full">
-                  Yes
-                </span>
-                <td data-title="Version">-</td>
-                <td data-title="Creator">Meta</td>
-                <td data-title="Source">HuggingFace</td>
-              </tr>
-              <tr>
-                <td data-title="Model">Vicuna-33b</td>
-                <td data-title="Model Size">33b</td>
-                                    <td data-title="Open-Weight"><span class="bg-green-100 text-green-700 font-bold py-1 px-3 rounded-full">
-                  Yes
-                </span>
-                <td data-title="Version">v1.3</td>
-                <td data-title="Creator">LMSYS</td>
-                <td data-title="Source">HuggingFace</td>
-              </tr>
-              <tr>
-                <td data-title="Model">Vicuna-13b</td>
-                <td data-title="Model Size">13b</td>
-                                    <td data-title="Open-Weight"><span class="bg-green-100 text-green-700 font-bold py-1 px-3 rounded-full">
-                  Yes
-                </span>
-                <td data-title="Version">v1.3</td>
-                <td data-title="Creator">LMSYS</td>
-                <td data-title="Source">HuggingFace</td>
-              </tr>
-              <tr>
-                <td data-title="Model">Vicuna-7b</td>
-                <td data-title="Model Size">7b</td>
-                                    <td data-title="Open-Weight"><span class="bg-green-100 text-green-700 font-bold py-1 px-3 rounded-full">
-                  Yes
-                </span>
-                <td data-title="Version">v1.3</td>
-                <td data-title="Creator">LMSYS</td>
-                <td data-title="Source">HuggingFace</td>
-              </tr>
-              <!-- ...continue for other rows... -->
-              <tr>
-                <td data-title="Model">Koala-13b</td>
-                <td data-title="Model Size">13b</td>
-                                    <td data-title="Open-Weight"><span class="bg-green-100 text-green-700 font-bold py-1 px-3 rounded-full">
-                  Yes
-                </span>
-                <td data-title="Version">-</td>
-                <td data-title="Creator">UCB</td>
-                <td data-title="Source">HuggingFace</td>
-              </tr>
-
-              <tr>
-                <td data-title="Model">ChatGLM2</td>
-                <td data-title="Model Size">6b</td>
-                                    <td data-title="Open-Weight"><span class="bg-green-100 text-green-700 font-bold py-1 px-3 rounded-full">
-                  Yes
-                </span>
-                <td data-title="Version">v1.0</td>
-                <td data-title="Creator">Tsinghua & Zhipu</td>
-                <td data-title="Source">HuggingFace</td>
-              </tr>
-              <!-- ...continue for other rows... -->
-              <tr>
-                <td data-title="Model">Baichuan-13b</td>
-                <td data-title="Model Size">13b</td>
-                                    <td data-title="Open-Weight"><span class="bg-green-100 text-green-700 font-bold py-1 px-3 rounded-full">
-                  Yes
-                </span>
-                <td data-title="Version">-</td>
-                <td data-title="Creator">Baichuan Inc.</td>
-                <td data-title="Source">HuggingFace</td>
-              </tr>
-
-              <tr>
-                <td data-title="Model">Wizardlm-13b</td>
-                <td data-title="Model Size">13b</td>
-                                    <td data-title="Open-Weight"><span class="bg-green-100 text-green-700 font-bold py-1 px-3 rounded-full">
-                  Yes
-                </span>
-                <td data-title="Version">v1.2</td>
-                <td data-title="Creator">Microsoft</td>
-                <td data-title="Source">HuggingFace</td>
-              </tr>
-              <tr>
-                <td data-title="Model">Oasst-12b</td>
-                <td data-title="Model Size">12b</td>
-                                    <td data-title="Open-Weight"><span class="bg-green-100 text-green-700 font-bold py-1 px-3 rounded-full">
-                  Yes
-                </span>
-                <td data-title="Version">-</td>
-                <td data-title="Creator">LAION</td>
-                <td data-title="Source">HuggingFace</td>
-              </tr>
-              <!-- Repeat for other rows, alternating color for LightCyan rows -->
-            </tbody>
-          </table>
+       
 
           <div class="flex-row">
             <div class="custom-table-container center add-top-margin-small">
-              <table class="hover:table-fixed">
+              <table class="custom-table">
                 <thead>
                   <tr>
                     <th>Model</th>
