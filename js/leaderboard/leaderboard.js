@@ -6,10 +6,10 @@ let formatNumber = (value) => {
 };
 let generateTable = (data, tableId) => {
     let table = document.getElementById(tableId);
-    table.classList.add("min-w-full", "text-center", "text-sm", "font-light"); // Tailwind classes for table
+    table.classList.add('rounded-lg',"min-w-full", "text-center", "text-sm", "font-light"); // Tailwind classes for table
 
     let thead = table.createTHead();
-    thead.classList.add("border-b","text-center", "font-medium", "dark:border-neutral-500"); // Tailwind classes for thead
+    thead.classList.add("border-b","text-center", "font-medium"); // Tailwind classes for thead
 
     let tbody = table.createTBody();
     let headerRow = thead.insertRow();
@@ -54,7 +54,7 @@ let generateTable = (data, tableId) => {
     // Populate the table body data
     data.forEach(item => {
         let row = tbody.insertRow();
-        row.classList.add("border-b", "transition", "duration-300", "ease-in-out", "hover:bg-neutral-100", "dark:border-neutral-500", "dark:hover:bg-neutral-600"); // Tailwind classes for tr
+        row.classList.add("transition", "duration-300", "ease-in-out", "hover:bg-neutral-100", ); // Tailwind classes for tr
         Object.values(item).forEach(text => {
             let cell = row.insertCell();
             cell.classList.add("whitespace-nowrap", "px-6", "py-4"); // Tailwind classes for td

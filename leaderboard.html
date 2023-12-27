@@ -69,9 +69,8 @@
                 <h1 class="text-3xl"  >Leaderboard - TrustLLM</h1>
 
 
-                <div class="table-container">
-                    <div class="section">
 
+                    <div class="section">
 
                         <h2 class="text-2xl font-semibold leading-tight text-gray-800 my-4">Robustness</h2>
                         <div class="flex flex-col">
@@ -108,7 +107,7 @@
                         <br>
                         <h2 class="text-2xl font-semibold leading-tight text-gray-800 my-4">Ethics</h2>
                         <div class="flex flex-col"> <!-- 新增的包裹层 -->
-                            <div class="overflow-x-auto sm:-mx-6 lg:-mx-8">
+                            <div class="overflow-x-hidden sm:-mx-6 lg:-mx-8">
                                 <div class="inline-block min-w-full py-2 sm:px-6 lg:px-8">
                                     <div class="overflow-hidden">
                                         <table class="js-sort-table" id="table_ethics"></table>
@@ -118,8 +117,8 @@
                         </div>
                         <br>
                         <h2 class="text-2xl font-semibold leading-tight text-gray-800 my-4">Truthfulness</h2>
-                        <div class="flex flex-col"> <!-- 新增的包裹层 -->
-                            <div class="overflow-x-auto sm:-mx-6 lg:-mx-8">
+                        <div class="flex flex-col justify-center"> <!-- 新增的包裹层 -->
+                            <div class="overflow-x-hidden sm:-mx-6 lg:-mx-8">
                                 <div class="inline-block min-w-full py-2 sm:px-6 lg:px-8">
                                     <div class="overflow-hidden">
                                         <table class="js-sort-table" id="table_truthfulness"></table>
@@ -129,17 +128,18 @@
                         </div>
                         <br>
                         <h2 class="text-2xl font-semibold leading-tight text-gray-800 my-4">Fairness</h2>
-                        <div class="flex flex-col"> <!-- 新增的包裹层 -->
-                            <div class="overflow-x-auto sm:-mx-6 lg:-mx-8">
+                        <div class="flex flex-col shadow-lg shadow-gray-50 hover:shadow-lg shadow-gray-200-500/40"> <!-- 新增的包裹层 -->
+                            <table class="js-sort-table" id="table_fairness"></table>
+                            <!-- <div class="overflow-x-hidden sm:-mx-6 lg:-mx-8">
                                 <div class="inline-block min-w-full py-2 sm:px-6 lg:px-8">
-                                    <div class="overflow-hidden">
-                                        <table class="js-sort-table" id="table_fairness"></table>
+                                    <div class="overflow-x-hidden">
+                                        
                                     </div>
-                                </div>
+                                </div> -->
                             </div>
                         </div>
 
-                    </div>
+                    
                 </div>
             </div>
 
