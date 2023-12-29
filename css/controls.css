@@ -48,6 +48,12 @@
   margin-top: 30px;
 }
 
+.shadow-rounded {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* 添加阴影效果 */
+    border-radius: 10px; /* 圆弧效果，10px为圆弧半径 */
+    overflow: hidden; /* 防止内部元素溢出圆角 */
+}
+
 .schoolLogo {
   width: 120px; /* 调整logo的宽度，以适应你的设计需求 */
   height: auto; /* 保持宽高比 */
