@@ -18,7 +18,7 @@
   <script src="js/footer.js"></script>
   <style>
     .menu-index {
-      color: rgb(255, 255, 255) !important;
+      color: rgb(0, 0, 0) !important;
       opacity: 1 !important;
       font-weight: 700 !important;
     }

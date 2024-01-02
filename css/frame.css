@@ -94,7 +94,7 @@ hr {
   z-index: 2;
   position: relative;
   width: 100%;
-  background-color: #114B7D;
+  background-color: #ffffff;
 ;
   min-width: 300px;
   -webkit-touch-callout: none;
@@ -125,7 +125,7 @@ hr {
 }
 
 .menu .logo {
-  margin-left: 20px;
+  justify-content: flex-start; /* 左对齐 */
 }
 
 .menu .logo a {
@@ -143,8 +143,8 @@ hr {
 }
 
 .menu .logo img {
-  margin: 0;
-  padding: 0;
+  margin: 3px;
+  padding: 10px 0;
 }
 
 .menu .menu-button {
@@ -166,7 +166,7 @@ hr {
 
 .menu .menu-items>a,
 .menu .menu-items>div {
-  color: rgba(255, 255, 255, 0.808);
+  color: rgba(0, 0, 0, 0.808);
   text-decoration: none;
   font-weight: 400;
   font-size: 18px;

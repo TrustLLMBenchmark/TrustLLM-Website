@@ -11,9 +11,11 @@
 }
 
 .title-icon {
-    width: 60%; /* logo宽度设置为100%，使其尽可能大 */
-    height: auto; /* 保持图片高度自适应 */
-    margin-bottom: 20px; /* 在logo和标语之间增加一些间隔 */
+    width: auto; /* logo宽度设置为100%，使其尽可能大 */
+    height: 60px; /* 保持图片高度自适应 */
+    margin-bottom: 50px; /* 在logo和标语之间增加一些间隔 */
+    margin-right: 10px; /* 在logo和菜单按钮之间增加一些间隔 */
+    margin-top: 20px; /* 在图片顶部增加间距 */
 }
 
 .title-icon2 {
@@ -47,6 +49,45 @@
   flex-wrap: wrap;
   margin-top: 30px;
 }
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* 防止水平滚动 */
+}
+
+/* 创建一个类来设置背景图片和文字 */
+.fullscreen-background {
+  position: relative; /* 相对定位 */
+  height: 100vh; /* 视口高度 */
+}
+
+.fullscreen-background img {
+  width: 100%; /* 图片宽度为100% */
+  height: 100vh; /* 图片高度为视口高度 */
+  object-fit: cover; /* 覆盖整个容器 */
+}
+
+.gradient-text {
+  position: absolute; /* 绝对定位 */
+  top: 50%; /* 垂直居中 */
+  right: 5%; /* 距离右侧边缘5% */
+  transform: translateY(-50%); /* 精确垂直居中 */
+  color: transparent; /* 透明颜色 */
+  font-size: 2em; /* 文字大小 */
+  font-family: 'Candara'; /* 使用Roboto字体 */
+  max-width: 40%; /* 最大宽度为页面宽度的35% */
+  background-image: linear-gradient(to right, #284F7A, #2F80ED); /* 蓝色渐变 */
+  -webkit-background-clip: text; /* 文字裁剪背景 */
+  background-clip: text;
+  font-size: 50px;
+}
+
+/* 添加更多内容以便于滚动 */
+/* .content { */
+/*   height: 2000px;  *//* 设置内容区域的高度 */
+/*   background-color: #f0f0f0;  *//* 内容区域的背景颜色 */
+/* } */
 
 .shadow-rounded {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* 添加阴影效果 */
