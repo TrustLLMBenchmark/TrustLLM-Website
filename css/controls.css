@@ -44,10 +44,17 @@
 
 #logoContainer {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
   flex-wrap: wrap;
-  margin-top: 30px;
+  margin-top: 20px;
+}
+
+.schoolLogo {
+  width: 15%; /* 调整logo的宽度，以适应你的设计需求 */
+  height: auto; /* 保持宽高比 */
+  padding:10px;
+  margin: 10px 10px;
 }
 html, body {
   height: 100%;
@@ -95,11 +102,7 @@ html, body {
     overflow: hidden; /* 防止内部元素溢出圆角 */
 }
 
-.schoolLogo {
-  width: 120px; /* 调整logo的宽度，以适应你的设计需求 */
-  height: auto; /* 保持宽高比 */
-  margin: 0 30px 30px 0;
-}
+
 
 .custom-image-button {
   display: flex;
