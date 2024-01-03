@@ -259,6 +259,7 @@ hr {
   position: relative;
   width: 100%;
   min-width: 500px;
+  box-shadow: 0 -10px 20px rgba(0,0,0,0.1); /* Adds a subtle shadow to the top of the container */
 }
 
 .content {
