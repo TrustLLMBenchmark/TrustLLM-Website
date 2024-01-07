@@ -34,30 +34,6 @@
 </head>
 
 <body>
-
-    <!-- <div id="nav">
-        <div id="icon">
-            <img src="img/logo.png" id="nav-icon">
-            <a class="nav-button" href="index.html"
-                style="margin-left: 2px; font-size: 24px">ScienceQA
-            </a>
-        </div>
-        <div>
-            <a class="nav-button" href="index.html#home">Home</a>
-            <a class="nav-button" href="index.html#dataset">Dataset</a>
-            <a class="nav-button" href="index.html#download">Download</a>
-            <a class="nav-button" href="index.html#method">Method</a>
-            <a class="nav-button" href="index.html#paper">Paper</a>
-            <a class="nav-button" href="index.html#code">Code</a>
-            <a class="nav-button" href="index.html#citation">Citation</a>
-            <a class="nav-button" href="index.html#authors">Authors</a>
-            <a class="nav-button" href="index.html#contact">Contact</a>
-            <a class="nav-button" href="leaderboard.html">Leaderboard</a>
-            <a class="nav-button" href="explore.html">Explore</a>
-            <a class="nav-button" href="visualize.html">Visualize</a>
-        </div>
-    </div> -->
-
     <div id="body">
 
         <div class="menu-container"></div>
@@ -68,14 +44,19 @@
 
         <div class="table-container">
             <div class="section">
-                <h1 class="text-3xl"  >Leaderboard - TrustLLM</h1>
+                <h1 class="text-3xl">Leaderboard</h1>
+                <br>
+                <div class="billboard">
+                    <h2 style="text-align: center; margin:0 0 0 0; color: red; font-family: 'Courier New';">Disclaimer</h2>
+            <p style="font-family: 'Verdana'">While we have incorporated as many datasets as possible, the assessment cannot be exhaustive, and there may still be some bias in the results. The outcomes of the evaluation do not represent individual positions. Additionally, we strongly discourage the use of the test set as training data to enhance the model's performance, as this would significantly impede the progress of the field. We provide a <a href="https://howiehwong.github.io/TrustLLM/">toolkit</a> to facilitate evaluations by others, and you can submit the results of your own large language models via email <a href="mailto:trustllm.benchmark@gmail.com">trustllm.benchmark@gmail.com</a>. We will add a * in leaderboard about your private evaluation.</p>
+                </div>
 
 
 
                     <div class="section">
 
-                        <h2 class="text-2xl font-semibold leading-tight text-gray-800 my-4">Robustness</h2>
-                        <div class="flex flex-col">
+                        <h2 class="text-2xl font-semibold leading-tight text-gray-1000 my-4">Robustness</h2>
+                        <div class="flex flex-col shadow-lg">
                             <div class="overflow-x-auto sm:-mx-6 lg:-mx-8">
                                 <div class="inline-block min-w-full py-2 sm:px-6 lg:px-8">
                                     <div class="overflow-hidden">
@@ -85,8 +66,8 @@
                             </div>
                         </div>
                         <br>
-                        <h2 class="text-2xl font-semibold leading-tight text-gray-800 my-4">Privacy</h2>
-                        <div class="flex flex-col"> <!-- 新增的包裹层 -->
+                        <h2 class="text-2xl font-semibold leading-tight text-gray-1000 my-4">Privacy</h2>
+                        <div class="flex flex-col shadow-lg"> <!-- 新增的包裹层 -->
                             <div class="overflow-x-auto sm:-mx-6 lg:-mx-8">
                                 <div class="inline-block min-w-full py-2 sm:px-6 lg:px-8">
                                     <div class="overflow-hidden">
@@ -96,8 +77,8 @@
                             </div>
                         </div>
                         <br>
-                        <h2 class="text-2xl font-semibold leading-tight text-gray-800 my-4">Safety</h2>
-                        <div class="flex flex-col"> <!-- 新增的包裹层 -->
+                        <h2 class="text-2xl font-semibold leading-tight text-gray-1000 my-4">Safety</h2>
+                        <div class="flex flex-col shadow-lg"> <!-- 新增的包裹层 -->
                             <div class="overflow-x-auto sm:-mx-6 lg:-mx-8">
                                 <div class="inline-block min-w-full py-2 sm:px-6 lg:px-8">
                                     <div class="overflow-hidden">
@@ -107,8 +88,8 @@
                             </div>
                         </div>
                         <br>
-                        <h2 class="text-2xl font-semibold leading-tight text-gray-800 my-4">Ethics</h2>
-                        <div class="flex flex-col"> <!-- 新增的包裹层 -->
+                        <h2 class="text-2xl font-semibold leading-tight text-gray-1000 my-4">Ethics</h2>
+                        <div class="flex flex-col shadow-lg"> <!-- 新增的包裹层 -->
                             <div class="overflow-x-hidden sm:-mx-6 lg:-mx-8">
                                 <div class="inline-block min-w-full py-2 sm:px-6 lg:px-8">
                                     <div class="overflow-hidden">
@@ -118,8 +99,8 @@
                             </div>
                         </div>
                         <br>
-                        <h2 class="text-2xl font-semibold leading-tight text-gray-800 my-4">Truthfulness</h2>
-                        <div class="flex flex-col justify-center"> <!-- 新增的包裹层 -->
+                        <h2 class="text-2xl font-semibold leading-tight text-gray-1000 my-4">Truthfulness</h2>
+                        <div class="flex flex-col shadow-lg justify-center"> <!-- 新增的包裹层 -->
                             <div class="overflow-x-hidden sm:-mx-6 lg:-mx-8">
                                 <div class="inline-block min-w-full py-2 sm:px-6 lg:px-8">
                                     <div class="overflow-hidden">
@@ -129,15 +110,14 @@
                             </div>
                         </div>
                         <br>
-                        <h2 class="text-2xl font-semibold leading-tight text-gray-800 my-4">Fairness</h2>
-                        <div class="flex flex-col shadow-lg shadow-gray-50 hover:shadow-lg shadow-gray-200-500/40"> <!-- 新增的包裹层 -->
-                            <table class="js-sort-table" id="table_fairness"></table>
-                            <!-- <div class="overflow-x-hidden sm:-mx-6 lg:-mx-8">
+                        <h2 class="text-2xl font-semibold leading-tight text-gray-1000 my-4">Fairness</h2>
+                        <div class="flex flex-col shadow-lg justify-center"> <!-- 新增的包裹层 -->
+                            <div class="overflow-x-hidden sm:-mx-6 lg:-mx-8">
                                 <div class="inline-block min-w-full py-2 sm:px-6 lg:px-8">
-                                    <div class="overflow-x-hidden">
-                                        
+                                    <div class="overflow-hidden">
+                                        <table class="js-sort-table" id="table_fairness"></table>
                                     </div>
-                                </div> -->
+                                </div>
                             </div>
                         </div>
 

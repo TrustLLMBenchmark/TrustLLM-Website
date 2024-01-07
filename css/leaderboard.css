@@ -18,18 +18,49 @@
 
 .table-container {
 
-    max-width: 80%; /* Adjust the width as needed */
+    max-width: 70%; /* Adjust the width as needed */
     margin-left: auto;
     margin-right: auto;
-    padding: 20px; /* Optional: for internal spacing */
+    padding: 10px; /* Optional: for internal spacing */
   }
   
 table {
-    width: 100%; 
-
-    border: 1px solid black;
+    position: relative;
+    width: 100%;
     border-collapse: collapse;
+    z-index: 1; /* 将表格提升至上层 */
+
 }
+
+
+table::before {
+    content: "";
+    background: url('../img/logo_only.png') no-repeat;
+    background-size: 25%; /* 缩小为原来的1/4 */
+    background-position: center center; /* 将背景定位到正中央 */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    filter: blur(15px);
+    z-index: -1;
+}
+
+
+
+td:first-child {
+    font-style: italic; /* 斜体 */
+    font-weight: bold;
+    color: #4C6E95
+}
+
+thead {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    background-color: #DCE5EF;
+    text-align: center; /* 将表头文字居中 */
+}
+
 
 
 
@@ -54,8 +85,8 @@ table#results.js-sort-13 tbody tr td:nth-child(14) {
 
 /* Table for three sub-tasks */
 #results {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 16px;
+    font-family: 'Candara';
+    font-size: 15px;
     border-collapse: collapse;
     width: 100%;
     text-align: center;
@@ -66,6 +97,7 @@ table#results.js-sort-13 tbody tr td:nth-child(14) {
 
 /*table tile*/
 #results th {
+    font-family: 'Candara';
     border: 1px solid #ddd;
     padding: 8px;
     padding-top: 12px;
@@ -98,16 +130,24 @@ table#results.js-sort-13 tbody tr td:nth-child(14) {
 
 .custom-th {
     text-align: center;
-    padding: 8px;
+    padding: 1px;
     background-color: var(--th);
-
+    font-family: 'Candara';
     color: #ffffff;
     cursor: pointer;
     user-select: none;
 }
 
+thead th {
+    font-size: 16px; /* 设置字体大小，可以根据需要更改 */
+    font-weight: bold; /* 设置字体粗细，可以根据需要更改 */
+    color: black; /* 设置字体颜色，可以根据需要更改 */
+    text-align: left; /* 设置文字对齐方式，可以根据需要更改 */
+    padding: 10px; /* 设置文字周围的内边距，可以根据需要更改 */
+}
+
 /* th, td {
-    font-family: 'Arial', 'Helvetica', sans-serif;
+    font-family: 'Candara';
     font-size: 16px;
     padding: 8px; 
     border: 1px solid #c6d6f4;

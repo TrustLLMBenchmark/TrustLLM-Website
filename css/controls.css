@@ -75,6 +75,15 @@ html, body {
   object-fit: cover; /* 覆盖整个容器 */
 }
 
+
+.billboard {
+            background-color: #F2F8FF;
+            padding: 20px;
+            border: 2px solid #ccc;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
 .gradient-text {
   position: absolute; /* 绝对定位 */
   top: 50%; /* 垂直居中 */
