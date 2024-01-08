@@ -17,18 +17,19 @@
   }
 
 .table-container {
-
-    max-width: 70%; /* Adjust the width as needed */
+    max-width: 90%; /* 调整宽度 */
     margin-left: auto;
     margin-right: auto;
-    padding: 10px; /* Optional: for internal spacing */
-  }
+    padding: 5px; /* 可选：用于内部间距 */
+    overflow: auto; /* 添加水平滚动条 */
+}
   
 table {
     position: relative;
     width: 100%;
     border-collapse: collapse;
     z-index: 1; /* 将表格提升至上层 */
+    overflow: auto;
 
 }
 
@@ -59,8 +60,8 @@ thead {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
     background-color: #DCE5EF;
     text-align: center; /* 将表头文字居中 */
-}
 
+}
 
 
 
@@ -95,11 +96,13 @@ table#results.js-sort-13 tbody tr td:nth-child(14) {
     margin-bottom: 2em;
 }
 
+
+
 /*table tile*/
 #results th {
     font-family: 'Candara';
     border: 1px solid #ddd;
-    padding: 8px;
+    padding: 10px;
     padding-top: 12px;
     padding-bottom: 12px;
     font-size: 16px;
