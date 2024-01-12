@@ -229,7 +229,7 @@ html, body {
   color: black;
   border: 1px solid #777777;
   background-color: white;
-  padding: 13px;
+  padding: 6px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -246,7 +246,7 @@ html, body {
 }
 
 .custom-button-flat.large {
-  font-size: 18px;
+  font-size: 24px;
   line-height: 18px;
   padding: 17px;
   border-radius: 56px;
@@ -265,13 +265,13 @@ html, body {
 }
 
 .custom-button-flat img {
-  width: 20px;
-  height: 20px;
+  width: 16px;
+  height: 16px;
 }
 
 .custom-button-flat.small img {
-  width: 16px;
-  height: 16px;
+  width: 8px;
+  height: 8px;
 }
 
 .custom-button-flat.large img {
